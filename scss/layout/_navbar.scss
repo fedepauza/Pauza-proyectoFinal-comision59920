@@ -3,6 +3,7 @@ header {
     width: 100%;
     height: 65px;
     background: map-get($colores-sitio, color4 );
+    z-index: 5;
     section {
         display: flex;
         position: relative;
@@ -29,6 +30,7 @@ header {
             flex-wrap: wrap;
             position: relative;
             padding: 0 70px;
+            z-index: 3;
                 label {
                     padding: 10px;
                     margin-top: -5px;
@@ -70,4 +72,5 @@ header {
 
 input:checked + ul{
     height: 100vh;
+    z-index: 3;
 }
