@@ -1,14 +1,18 @@
 .carousel-inner {
-  width: 90%;
+  width: 95%;
   height: 250px;
-  max-height: 250px;
-  min-height: 100px;
   border-radius: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: auto;
-  margin-top: 100px;
-  background-color: #CC3D1B; }
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  background-color: #514b4b;
+  color: antiquewhite;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px; }
 
 * {
   margin: 0;
@@ -97,7 +101,7 @@ body {
       justify-content: center;
       align-self: center;
       z-index: -5;
-      margin-bottom: 40px; }
+      margin-bottom: 60px; }
       body main section article div {
         display: flex;
         position: relative;
@@ -129,6 +133,22 @@ body {
 .descripcion {
   left: 15px;
   top: 2px; }
+
+.button-ver-mas {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 1.5rem;
+  background-color: #7F2213;
+  margin: auto;
+  margin-bottom: 10px; }
+
+.button-ver-mas a {
+  text-decoration: none;
+  color: antiquewhite; }
 
 header {
   width: 100%;
@@ -163,3 +183,16 @@ main div section {
   background-size: cover;
   background-attachment: scroll;
   background-position: center; }
+
+footer section {
+  display: flex; }
+  footer section div {
+    width: 100%;
+    height: 7.8125rem;
+    background-color: black;
+    margin-top: 2.5rem;
+    margin-bottom: 0; }
+    footer section div p {
+      color: antiquewhite;
+      padding: 10px;
+      margin-left: 20px; }

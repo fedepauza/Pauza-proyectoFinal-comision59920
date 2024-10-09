@@ -25,22 +25,28 @@ $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://
 
 // Source mixin
 @mixin make-container {
-    width: 90%;
+    width: 95%;
     height: 250px;
-    max-height: 250px;
-    min-height: 100px;
     border-radius: 15px;
+    
     padding-left: 10px;
     padding-right: 10px;
-    margin: auto;
-    margin-top: 100px;
-    background-color: map-get($colores-sitio , color3 );
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    background-color: rgb(81, 75, 75);
+    color: antiquewhite;
+    text-align: center;
   }
 
   .carousel-inner {
-    @include make-container
+    @include make-container;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
   }
-  
+
+ 
 
 $carousel-transition-duration:       .6s;
 $carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)

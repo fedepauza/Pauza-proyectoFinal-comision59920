@@ -1,0 +1,17 @@
+footer {
+    section {
+        display: flex;
+        div {
+            width: 100%;
+            height: 7.8125rem;
+            background-color: black;
+            margin-top: 2.5rem;
+            margin-bottom: 0;
+            p {
+                color: antiquewhite;
+                padding: 10px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
