@@ -20,63 +20,109 @@
   box-sizing: border-box; }
 
 header {
+  width: 100%;
+  height: 65px;
+  background: #000000; }
+
+main div section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 836px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.727);
+  gap: 10px; }
+  main div section h1 {
+    font-size: 4rem;
+    color: #f0ede9; }
+  main div section h2 {
+    font-size: 1.5rem;
+    color: #f0ede9; }
+  main div section p {
+    width: 75%;
+    font-size: 1rem;
+    color: #f0ede9; }
+
+.section-principal {
+  width: 100%;
+  background-image: url("../../Assets/img/main-fondo.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center; }
+
+footer section {
+  display: flex; }
+  footer section div {
+    width: 100%;
+    height: 7.8125rem;
+    background-color: black;
+    margin-top: 2.5rem;
+    margin-bottom: 0; }
+    footer section div p {
+      color: antiquewhite;
+      padding: 10px;
+      margin-left: 20px; }
+
+header {
   position: fixed;
   width: 100%;
   height: 65px;
   background: black;
-  z-index: 5; }
+  z-index: 3; }
   header section {
     display: flex;
     position: relative;
     justify-content: space-between; }
-    header section article {
+    header section div {
       display: flex;
-      position: relative; }
-      header section article div {
-        position: absolute;
-        top: 6px;
-        left: 50px; }
-        header section article div img {
-          width: 100px; }
-    header section nav {
-      width: 100%;
-      height: 65px;
-      display: flex;
-      justify-content: right;
-      flex-direction: row-reverse;
-      align-items: center;
-      flex-wrap: wrap;
       position: relative;
-      padding: 0 70px;
-      z-index: 3; }
-      header section nav label {
-        padding: 10px;
-        margin-top: -5px;
-        margin-left: 20px;
-        cursor: pointer; }
-      header section nav input {
-        display: none; }
-      header section nav ul {
-        width: 100%;
-        background-image: url("../../Assets/img/textura.jpeg");
-        position: absolute;
-        top: 65px;
-        left: 0;
-        display: flex;
-        height: 0;
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 1.5rem; }
-        header section nav ul li {
-          list-style: none;
-          font-family: sans-serif;
-          font-size: 1.5rem; }
-        header section nav ul a {
-          text-decoration: none;
-          color: #f0ede9;
-          text-shadow: 5px 5px 5px black; }
+      top: 6px;
+      left: 70px;
+      height: 55px; }
+    header section a img {
+      width: 90px; }
+  header nav {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: right;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 0 70px;
+    z-index: 3; }
+    header nav label {
+      padding: 10px;
+      margin-top: -5px;
+      margin-left: 80px;
+      cursor: pointer; }
+    header nav input {
+      display: none; }
+    header nav ul {
+      width: 100%;
+      background-image: url("../../Assets/img/textura.jpeg");
+      position: absolute;
+      top: 65px;
+      left: -50px;
+      display: flex;
+      height: 0;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.5rem; }
+      header nav ul li {
+        list-style: none;
+        font-family: sans-serif;
+        font-size: 1.5rem; }
+      header nav ul a {
+        text-decoration: none;
+        color: #f0ede9;
+        text-shadow: 5px 5px 5px black; }
 
 input:checked + ul {
   height: 100vh;
@@ -149,50 +195,3 @@ body {
 .button-ver-mas a {
   text-decoration: none;
   color: antiquewhite; }
-
-header {
-  width: 100%;
-  height: 65px;
-  background: #000000; }
-
-main div section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 836px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.727);
-  gap: 10px; }
-  main div section h1 {
-    font-size: 4rem;
-    color: #f0ede9; }
-  main div section h2 {
-    font-size: 1.5rem;
-    color: #f0ede9; }
-  main div section p {
-    width: 75%;
-    font-size: 1rem;
-    color: #f0ede9; }
-
-.section-principal {
-  width: 100%;
-  background-image: url("../../Assets/img/main-fondo.jpg");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  background-position: center; }
-
-footer section {
-  display: flex; }
-  footer section div {
-    width: 100%;
-    height: 7.8125rem;
-    background-color: black;
-    margin-top: 2.5rem;
-    margin-bottom: 0; }
-    footer section div p {
-      color: antiquewhite;
-      padding: 10px;
-      margin-left: 20px; }

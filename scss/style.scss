@@ -6,15 +6,19 @@
 
 @import "./base/reset";
 
-@import "./layout/navbar";
+@import "./layout/header";
 
-@import "./layout/unidades";
+@import "./layout/main";
 
-@import "./components/header";
+@import "./layout/footer";
 
-@import "./components/main";
+@import "./components/navbar";
 
-@import "./components/footer";
+@import "./components/unidades";
+
+@import "./components/nuestras-unidades";
+
+
 
 
 
