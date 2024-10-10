@@ -53,15 +53,15 @@ main div section {
   background-attachment: scroll;
   background-position: center; }
 
-footer section {
+footer .footer {
   display: flex; }
-  footer section div {
+  footer .footer div {
     width: 100%;
     height: 7.8125rem;
     background-color: black;
     margin-top: 2.5rem;
     margin-bottom: 0; }
-    footer section div p {
+    footer .footer div p {
       color: antiquewhite;
       padding: 10px;
       margin-left: 20px; }
@@ -80,7 +80,7 @@ header {
     header section div {
       display: flex;
       position: relative;
-      top: 6px;
+      top: 7px;
       left: 70px;
       height: 55px; }
     header section a img {
@@ -216,8 +216,8 @@ body {
   display: none; }
 
 input {
-  margin-bottom: 40px;
-  margin-left: 30px; }
+  margin-bottom: 30px;
+  margin-left: 20px; }
 
 label {
   font-size: 1.125rem; }
@@ -227,3 +227,17 @@ label {
   height: 10px;
   background-color: gray;
   margin-bottom: 50px; }
+
+main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .titulo-oportunidades {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-size: 2rem; }
+  main .section-oportunidades {
+    width: 90%; }

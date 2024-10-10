@@ -10,7 +10,7 @@ body {
                 margin: 40px 30px;
                 font-size: map-get($text-size, size3 );
             }
-            article{
+            article  {
                 display: grid;
                 grid-template-columns: repeat( auto-fill, minmax(6.25rem, 21.875rem));
                 grid-template-rows: 18.75rem;
@@ -34,6 +34,7 @@ body {
                     justify-self: center;
                     img {
                         width: 90%;
+                        ;
                     }
                     p {
                         position: absolute;
