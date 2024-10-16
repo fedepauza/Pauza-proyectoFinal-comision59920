@@ -1,0 +1,82 @@
+// * {
+//     border: 1px solid red;
+// }
+
+.full-conteiner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+main {
+    font-family: sans-serif;
+   section {
+   
+    h1 {
+        width: 70%;
+        text-align: center;
+        font-size: map-get($text-size , size4 );
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+   }
+    .permutas-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    margin: auto;
+    
+    .div-listas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 572px;
+        height: 625px;
+        background-color: rgba(250, 235, 215, 0.51);
+        align-items: center;
+        border-radius: 20px;
+        padding: 10px 20px 20px 20px;
+        margin: 5px;
+        h2 {
+            width: 40%;
+            text-align: center;
+            font-size: map-get($text-size , size4 );
+            text-decoration: underline;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                h3 {
+                    font-size: map-get($text-size , size6 );
+                    text-align: left;
+                }
+                p {
+                    text-align: left;
+                }
+            }
+        }
+        button {
+            border: none;
+            width: 180px;
+            border-radius: 5px;
+            background-color: map-get($colores-sitio , color2 );
+            margin-top: 30px;
+            a {
+                text-decoration: none;
+                color: map-get($colores-texto , color1 );
+            }
+        }
+    }
+
+   }
+}
+
+.consignaciones-box {
+    margin-top: 68px;
+}

@@ -1,9 +1,13 @@
+
 footer {
-     .footer {
+    align-items: center;
+    section {
+        width: 100%;
         display: flex;
+        position: absolute;
+        bottom: 0px;
         div {
             width: 100%;
-            height: 7.8125rem;
             background-color: black;
             margin-top: 2.5rem;
             margin-bottom: 0;
@@ -11,7 +15,17 @@ footer {
                 color: antiquewhite;
                 padding: 10px;
                 margin-left: 20px;
+                width: 100%;
             }
+        }
+        h3 {
+            color: antiquewhite;
+            font-size: .875rem;
+            text-align: right;
+            margin-right:25px;
+            margin-top: 12px;
         }
     }
 }
+
+

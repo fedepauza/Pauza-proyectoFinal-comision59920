@@ -1,9 +1,8 @@
-
-
 body {
     background-color: map-get($colores-sitio , color5 );
     main {
         section {
+            margin-top: 0;
             justify-content: center;
             width: 100%;
             h2 {

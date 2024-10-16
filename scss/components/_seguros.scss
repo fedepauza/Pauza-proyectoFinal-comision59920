@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    width: 100%;
+    margin: 0;
+    padding-top: 85px;
+    padding-bottom: 125px;
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        h1 {
+            font-size: map-get($text-size , size3 );
+            color: map-get($colores-texto , color2 );
+        }
+        h3 {
+            font-size: map-get($text-size, size5 );
+            width: 50%;
+            text-align: center;
+        }
+        p {
+            font-size: map-get($text-size , size6 );
+            width: 75%;
+            text-align: center;
+        }
+    }
+}
+
+.cobertura-full {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px ;
+    .conteiner-cobertura {
+        width: 250px;
+        height: 210px;
+        text-align: center;
+        background-color: map-get($colores-sitio , color6 );
+        border-radius: 10px;
+        color: rgb(216, 212, 212);
+        h2 {
+            font-size: map-get($text-size , size4 );
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            width: 80%;
+            font-size: map-get($text-size , size6 );
+            margin: auto;
+        }
+    }
+}
+
+.beneficios-full {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    .conteiner-beneficios {
+        width: 250px;
+        height: 210px;
+        text-align: center;
+        background-color: map-get($colores-sitio , color6 );
+        border-radius: 10px;
+        color: rgb(216, 212, 212);
+        h2 {
+            font-size: map-get($text-size , size4 );
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            width: 80%;
+            font-size: map-get($text-size , size6 );
+            margin: auto;
+        }
+    }
+}
+
+.button-seguros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: map-get($colores-sitio , color3 );
+    border: none;
+    border-radius: 10px;
+    a{
+        color: map-get($colores-texto , color1 );
+        text-decoration: none;
+    }
+}
