@@ -1,3 +1,7 @@
+// * {
+//     border: 0.1px solid red;
+// }
+
 .main-oportunidades {
     width: 100%;
     margin:auto;
@@ -7,11 +11,46 @@
 }
 
 .titulo-oportunidades {
-    margin-top: 100px;
+    font-weight: bolder;
+    margin-top: 10px;
     margin-left: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     font-size: 2rem;
 }
 .section-oportunidades {
     width: 90%;
+    margin: auto;
+    
+    article {
+        display: flex;
+        gap: 20px;
+    }
+    
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    .price{
+        position: absolute;
+        bottom: -35px;
+        right:45px;
+    }
+    
+}
+
+.descripcion {
+    width: 200px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.button-oportunidades {
+    position: absolute;
+    bottom: -20px;
+    a {
+        margin-top: 50px;
+    }
 }

@@ -1,5 +1,5 @@
 // * {
-//     border: 1px solid red;
+//     border: 0.5px solid red;
 // }
 
 .full-conteiner {
@@ -10,8 +10,7 @@
 
 main {
     font-family: sans-serif;
-   section {
-   
+    section {  
     h1 {
         width: 70%;
         text-align: center;
@@ -19,45 +18,57 @@ main {
         text-decoration: underline;
         margin-bottom: 20px;
     }
-   }
+}
     .permutas-section {
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap ;
     margin: auto;
     
     .div-listas {
         display: flex;
+        position: relative;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 572px;
+        width: 550px;
         height: 625px;
         background-color: rgba(250, 235, 215, 0.51);
-        align-items: center;
         border-radius: 20px;
-        padding: 10px 20px 20px 20px;
+        padding: 0px 20px;
+        margin: auto;
         margin: 5px;
         h2 {
             width: 40%;
-            text-align: center;
+            text-align: left;
             font-size: map-get($text-size , size4 );
             text-decoration: underline;
+            margin-bottom: 30px;
+            margin-left: 0px;        
         }
-        ul {
+        .permutas-ul {
+            width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            li {
+            justify-content: center;
+            margin-top: 0px;
+            .permutas-li {
+                width: 100%;
                 list-style: none;
                 display: flex;
                 flex-direction: column;
-                gap: 5px;
-                h3 {
-                    font-size: map-get($text-size , size6 );
+                margin-bottom: -30px;
+                .permutas-h3 {
+                    width: 34%;
+                    margin-top: 2px;
+                    font-size: map-get($text-size , size5 );
                     text-align: left;
+                    font-weight: bold;
                 }
-                p {
+                .permutas-p {
+                    width: 100%;
                     text-align: left;
+                    font-size: map-get($text-size , size6 );
                 }
             }
         }
@@ -66,17 +77,29 @@ main {
             width: 180px;
             border-radius: 5px;
             background-color: map-get($colores-sitio , color2 );
-            margin-top: 30px;
+            margin: auto;
+            margin-top: 20px;
             a {
                 text-decoration: none;
                 color: map-get($colores-texto , color1 );
             }
         }
-    }
+        }
 
-   }
+    }
 }
 
-.consignaciones-box {
-    margin-top: 68px;
+.button-permuta {
+            position: absolute;
+            border: none;
+            width: 180px;
+            border-radius: 5px;
+            background-color: map-get($colores-sitio , color2 );
+            bottom: 60px;
+            left: 170px;
+            
+            a {
+                text-decoration: none;
+                color: map-get($colores-texto , color1 );
+            }
 }

@@ -1,38 +1,67 @@
-// * {
-//     border: 1px solid red;
-// }
 
-main {
-    .contact-form { 
-        display: flex;
-        flex-direction: column;
-        align-items:flex-start;
-        
-        div {
-            .nombre {
-                margin-left: 0;
+.main-contacto {
+    font-family: sans-serif;
+   
+    .contact-section{
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            p {
+                width: 50%;
+                text-align: center;
+                color: #666;
+                margin: auto;
             }
-            .apellido {
-                margin-left: 0;
-            }
-        }
-        div {
-            .email{
-                margin-left: 0;
-            }
-        }
-        div {
-            textarea {
-            }
-        }
-        .submit {
-            margin-top: 10px;
-        }
-        div {
-            display: flex;
-            justify-content: right;
-            iframe {
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #dbd7d7b5;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .form-group {
+                    margin-bottom: 15px;
+                    .input-text {
+                        width: 95%;
+                        margin: auto;
+                    }
+                    textarea:focus {
+                        outline: none;
+                        border-color: #007bff;
+                        background-color: #fff;
+                    }
+                    textarea {
+                        height: 150px;
+                        width: 95%;
+                        resize: none;
+                        padding: 5px;
+                    }
+                    
+                }
             }
         }
     }
+    
+}
+
+.button-contacto {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+}
+.button-contacto:hover {
+    background-color: #8ba814;
+}
+
+iframe {
+    margin: auto;
 }

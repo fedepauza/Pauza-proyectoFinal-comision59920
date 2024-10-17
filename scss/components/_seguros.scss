@@ -1,6 +1,6 @@
-html {
-    height: 100%;
-}
+// * {
+//     border: 0.5px solid red;
+// }
 main {
     display: flex;
     flex-direction: column;
@@ -13,22 +13,31 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
-        h1 {
+        .seguros-h1 {
             font-size: map-get($text-size , size3 );
             color: map-get($colores-texto , color2 );
+            margin-top: 20px;
         }
         h3 {
-            font-size: map-get($text-size, size5 );
-            width: 50%;
+            font-size: map-get($text-size, size4 );
+            width: 30%;
             text-align: center;
+            font-weight: lighter;
+            margin-top: -10px;
+            margin-bottom: 5px;
         }
         p {
-            font-size: map-get($text-size , size6 );
-            width: 75%;
+            font-size: map-get($text-size , size5 );
+            width: 25%;
             text-align: center;
+            margin-bottom: 40px;
         }
     }
+}
+
+.beneficios-h2 {
+    font-size: map-get($text-size , size4 );
+
 }
 
 .cobertura-full {
@@ -38,16 +47,19 @@ main {
     width: 100%;
     gap: 20px ;
     .conteiner-cobertura {
+        display: flex;
+        flex-direction: column;
         width: 250px;
         height: 210px;
         text-align: center;
+        justify-content: center;
         background-color: map-get($colores-sitio , color6 );
         border-radius: 10px;
         color: rgb(216, 212, 212);
         h2 {
             font-size: map-get($text-size , size4 );
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: -60px;
         }
         p {
             width: 80%;
@@ -64,6 +76,8 @@ main {
     width: 100%;
     gap: 20px;
     .conteiner-beneficios {
+        display: flex;
+        flex-direction: column;
         width: 250px;
         height: 210px;
         text-align: center;
@@ -72,8 +86,8 @@ main {
         color: rgb(216, 212, 212);
         h2 {
             font-size: map-get($text-size , size4 );
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: -50px;
         }
         p {
             width: 80%;

@@ -45,9 +45,10 @@ header {
                 ul {
                     width: 100%;
                     background-image: url(../Assets/img/textura.jpeg);
+                    background-size: cover;
                     position: absolute;
                     top: 65px;
-                    left: -50px;
+                    left: -90px;
                     display: flex;
                     height: 0;
                     overflow: hidden;
@@ -72,6 +73,7 @@ header {
 // Menu hamburguesa on/off 
 
 input:checked + ul{
+    width: 110%;
     height: 100vh;
     z-index: 3;
 }
