@@ -47,8 +47,8 @@ main {
       color: #f0ede9; }
 
 .section-principal {
+  background-image: url(../Assets/img/main-fondo.jpg);
   width: 100%;
-  background-image: url(../../Assets/img/main-fondo.jpg);
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +118,7 @@ header {
       display: none; }
     header nav ul {
       width: 100%;
-      background-image: url(../../Assets/img/textura.jpeg);
+      background-image: url(../Assets/img/textura.jpeg);
       position: absolute;
       top: 65px;
       left: -50px;
