@@ -1,5 +1,5 @@
 main {
-    flex: 1;
+    padding-top: 0;
     div {
         section{
             display: flex;
@@ -29,6 +29,7 @@ main {
 
 .section-principal {
     background-image: url(../Assets/img/main-fondo.jpg);
+    margin-top: 0;
     width: 100%;
     object-fit: cover;
     background-repeat: no-repeat;

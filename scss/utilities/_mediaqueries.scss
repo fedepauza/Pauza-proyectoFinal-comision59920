@@ -1,0 +1,11 @@
+@mixin tablet {
+    @media (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin promax {
+    @media (max-width:428px) {
+        @content;
+    }
+}

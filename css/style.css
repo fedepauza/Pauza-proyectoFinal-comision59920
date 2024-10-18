@@ -25,7 +25,7 @@ header {
   background: #000000; }
 
 main {
-  flex: 1; }
+  padding-top: 0; }
   main div section {
     display: flex;
     flex-direction: column;
@@ -48,6 +48,7 @@ main {
 
 .section-principal {
   background-image: url(../Assets/img/main-fondo.jpg);
+  margin-top: 0;
   width: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -55,29 +56,45 @@ main {
   background-attachment: scroll;
   background-position: center; }
 
-footer {
-  align-items: center; }
-  footer section {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    bottom: 0px; }
-    footer section div {
-      width: 100%;
-      background-color: black;
-      margin-top: 2.5rem;
-      margin-bottom: 0; }
-      footer section div p {
-        color: antiquewhite;
-        padding: 10px;
-        margin-left: 20px;
-        width: 100%; }
-    footer section h3 {
-      color: antiquewhite;
-      font-size: .875rem;
-      text-align: right;
-      margin-right: 25px;
-      margin-top: 12px; }
+footer section {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  padding-top: 0px;
+  gap: 20px; }
+  @media (max-width: 428px) {
+    footer section {
+      padding-top: 7px;
+      gap: 0; } }
+  footer section p {
+    color: antiquewhite;
+    font-size: .875rem;
+    text-align: right;
+    margin-left: 20px; }
+    @media (max-width: 768px) {
+      footer section p {
+        font-size: .625rem; } }
+    @media (max-width: 428px) {
+      footer section p {
+        text-align: left;
+        width: 80%;
+        margin-left: 5px; } }
+  footer section h3 {
+    color: antiquewhite;
+    font-size: .875rem;
+    text-align: right;
+    margin-right: 20px; }
+    @media (max-width: 428px) {
+      footer section h3 {
+        width: 40%;
+        margin-right: 5px;
+        text-align: right; } }
 
 header {
   position: fixed;
@@ -96,6 +113,9 @@ header {
       top: 7px;
       left: 70px;
       height: 55px; }
+      @media (max-width: 768px) {
+        header section div {
+          left: 25px; } }
     header section a img {
       width: 90px; }
   header nav {
@@ -114,6 +134,9 @@ header {
       margin-top: -5px;
       margin-left: 80px;
       cursor: pointer; }
+      @media (max-width: 768px) {
+        header nav label {
+          margin-right: -60px; } }
     header nav input {
       display: none; }
     header nav ul {
@@ -130,6 +153,12 @@ header {
       justify-content: center;
       flex-direction: column;
       gap: 1.5rem; }
+      @media (max-width: 768px) {
+        header nav ul {
+          left: -110px; } }
+      @media (max-width: 428px) {
+        header nav ul {
+          left: -90px; } }
       header nav ul li {
         list-style: none;
         font-family: sans-serif;
@@ -143,6 +172,103 @@ input:checked + ul {
   width: 110%;
   height: 100vh;
   z-index: 3; }
+  @media (max-width: 768px) {
+    input:checked + ul {
+      width: 120%; } }
+  @media (max-width: 428px) {
+    input:checked + ul {
+      width: 130%; } }
+
+.main-seguros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0; }
+  .main-seguros section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-seguros section .seguros-h1 {
+      font-size: 2rem;
+      color: #161515;
+      margin-top: 20px; }
+    .main-seguros section h3 {
+      font-size: 1.5rem;
+      width: 50%;
+      text-align: center;
+      font-weight: lighter;
+      margin-top: -10px;
+      margin-bottom: 5px; }
+    .main-seguros section p {
+      font-size: 1rem;
+      width: 40%;
+      text-align: center;
+      margin-bottom: 40px; }
+  .main-seguros .cobertura-full {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px; }
+    .main-seguros .cobertura-full .conteiner-cobertura {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      height: 210px;
+      text-align: center;
+      justify-content: center;
+      background-color: rgba(29, 28, 28, 0.584);
+      border-radius: 10px;
+      color: #d8d4d4; }
+      .main-seguros .cobertura-full .conteiner-cobertura h2 {
+        font-size: 1.5rem;
+        margin-top: 40px;
+        margin-bottom: -40px; }
+      .main-seguros .cobertura-full .conteiner-cobertura p {
+        width: 80%;
+        font-size: 0.875rem;
+        margin: auto; }
+  .main-seguros .beneficios-full {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px; }
+    .main-seguros .beneficios-full .conteiner-beneficios {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      height: 210px;
+      text-align: center;
+      background-color: rgba(29, 28, 28, 0.584);
+      border-radius: 10px;
+      color: #d8d4d4; }
+      .main-seguros .beneficios-full .conteiner-beneficios h2 {
+        font-size: 1.5rem;
+        margin-top: 40px;
+        margin-bottom: -40px; }
+      .main-seguros .beneficios-full .conteiner-beneficios p {
+        width: 80%;
+        font-size: 0.875rem;
+        margin: auto; }
+
+.beneficios-h2 {
+  font-size: 1.5rem; }
+
+.button-seguros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #CC3D1B;
+  border: none;
+  border-radius: 10px; }
+  .button-seguros a {
+    color: #f0ede9;
+    text-decoration: none; }
 
 body {
   background-color: #b2b1b1; }
@@ -171,6 +297,7 @@ body {
         width: 75vw;
         max-width: 250px;
         min-width: 100px;
+        margin-bottom: -10px;
         height: 300px;
         flex-direction: column;
         align-items: center;
@@ -239,15 +366,16 @@ label {
   font-size: 1.125rem; }
 
 .main-oportunidades {
-  width: 100%;
+  width: 100dvh;
   margin: auto;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .titulo-oportunidades {
   font-weight: bolder;
-  margin-top: 10px;
+  padding-top: 85px;
   margin-left: 30px;
   margin-bottom: 80px;
   font-size: 2rem; }
@@ -257,21 +385,24 @@ label {
   margin: auto; }
   .section-oportunidades article {
     display: flex;
-    gap: 20px; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px; }
 
 .img-box {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
   align-items: center; }
   .img-box .price {
     position: absolute;
-    bottom: -35px;
-    right: 45px; }
+    bottom: -15px;
+    right: 25px; }
 
 .descripcion {
   width: 200px;
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: left; }
 
 .button-oportunidades {
@@ -279,116 +410,24 @@ label {
   bottom: -20px; }
   .button-oportunidades a {
     margin-top: 50px; }
-
-main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100dvh;
-  width: 100%;
-  margin: 0;
-  padding-top: 85px;
-  padding-bottom: 125px; }
-  main section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    main section .seguros-h1 {
-      font-size: 2rem;
-      color: #161515;
-      margin-top: 20px; }
-    main section h3 {
-      font-size: 1.5rem;
-      width: 30%;
-      text-align: center;
-      font-weight: lighter;
-      margin-top: -10px;
-      margin-bottom: 5px; }
-    main section p {
-      font-size: 1rem;
-      width: 25%;
-      text-align: center;
-      margin-bottom: 40px; }
-
-.beneficios-h2 {
-  font-size: 1.5rem; }
-
-.cobertura-full {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 20px; }
-  .cobertura-full .conteiner-cobertura {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 210px;
-    text-align: center;
-    justify-content: center;
-    background-color: rgba(29, 28, 28, 0.584);
-    border-radius: 10px;
-    color: #d8d4d4; }
-    .cobertura-full .conteiner-cobertura h2 {
-      font-size: 1.5rem;
-      margin-top: 50px;
-      margin-bottom: -60px; }
-    .cobertura-full .conteiner-cobertura p {
-      width: 80%;
-      font-size: 0.875rem;
-      margin: auto; }
-
-.beneficios-full {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 20px; }
-  .beneficios-full .conteiner-beneficios {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 210px;
-    text-align: center;
-    background-color: rgba(29, 28, 28, 0.584);
-    border-radius: 10px;
-    color: #d8d4d4; }
-    .beneficios-full .conteiner-beneficios h2 {
-      font-size: 1.5rem;
-      margin-top: 50px;
-      margin-bottom: -50px; }
-    .beneficios-full .conteiner-beneficios p {
-      width: 80%;
-      font-size: 0.875rem;
-      margin: auto; }
-
-.button-seguros {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 30px;
-  margin: auto;
-  margin-top: 40px;
-  background-color: #CC3D1B;
-  border: none;
-  border-radius: 10px; }
-  .button-seguros a {
-    color: #f0ede9;
-    text-decoration: none; }
-
-.full-conteiner {
-  display: flex;
-  flex-direction: column;
-  position: relative; }
+  @media (max-width: 768px) {
+    .button-oportunidades {
+      margin-bottom: 20px;
+      bottom: -30px; } }
 
 main {
   font-family: sans-serif; }
   main section h1 {
+    padding-top: 75px;
     width: 70%;
     text-align: center;
     font-size: 1.5rem;
     text-decoration: underline;
     margin-bottom: 20px; }
+    @media (max-width: 428px) {
+      main section h1 {
+        margin: auto;
+        margin-bottom: 20px; } }
   main .permutas-section {
     display: flex;
     position: relative;
@@ -407,25 +446,33 @@ main {
       padding: 0px 20px;
       margin: auto;
       margin: 5px; }
+      @media (max-width: 768px) {
+        main .permutas-section .div-listas {
+          height: 450px; } }
+      @media (max-width: 428px) {
+        main .permutas-section .div-listas {
+          height: 500px; } }
       main .permutas-section .div-listas h2 {
         width: 40%;
         text-align: left;
         font-size: 1.5rem;
         text-decoration: underline;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        margin-top: 30px;
         margin-left: 0px; }
+        @media (max-width: 428px) {
+          main .permutas-section .div-listas h2 {
+            margin-bottom: 10px; } }
       main .permutas-section .div-listas .permutas-ul {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-top: 0px; }
         main .permutas-section .div-listas .permutas-ul .permutas-li {
           width: 100%;
           list-style: none;
           display: flex;
-          flex-direction: column;
-          margin-bottom: -30px; }
+          flex-direction: column; }
           main .permutas-section .div-listas .permutas-ul .permutas-li .permutas-h3 {
             width: 34%;
             margin-top: 2px;
@@ -455,6 +502,13 @@ main {
   background-color: #992E14;
   bottom: 60px;
   left: 170px; }
+  @media (max-width: 768px) {
+    .button-permuta {
+      bottom: 30px; } }
+  @media (max-width: 428px) {
+    .button-permuta {
+      bottom: 20px;
+      left: 120px; } }
   .button-permuta a {
     text-decoration: none;
     color: #f0ede9; }
@@ -481,13 +535,16 @@ main {
     main .atencion-personalizada .div-atencion {
       display: flex;
       position: relative;
-      min-width: 550px;
+      width: 75%;
       height: 580px;
       border-radius: 15px;
       margin-top: 10px;
       margin: auto;
       padding-top: 20px;
       background-color: rgba(250, 235, 215, 0.51); }
+      @media (max-width: 428px) {
+        main .atencion-personalizada .div-atencion {
+          height: 680px; } }
       main .atencion-personalizada .div-atencion h2 {
         width: 80%;
         font-size: 1rem;
@@ -500,7 +557,7 @@ main {
         flex-direction: column;
         flex-wrap: wrap;
         position: absolute;
-        top: 60px; }
+        top: 70px; }
         main .atencion-personalizada .div-atencion ul li {
           list-style: none; }
           main .atencion-personalizada .div-atencion ul li h3 {
@@ -512,7 +569,7 @@ main {
           main .atencion-personalizada .div-atencion ul li p {
             text-align: left;
             margin-left: 0;
-            width: 500px; }
+            width: 90%; }
       main .atencion-personalizada .div-atencion button {
         position: absolute;
         border: none;
@@ -523,45 +580,57 @@ main {
         bottom: 40px;
         left: 180px;
         padding-top: 1px; }
+        @media (max-width: 428px) {
+          main .atencion-personalizada .div-atencion button {
+            left: 75px;
+            bottom: 15px; } }
         main .atencion-personalizada .div-atencion button a {
           text-decoration: none;
           color: #f0ede9; }
 
 .main-contacto {
   font-family: sans-serif; }
-  .main-contacto .contact-section .container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px; }
-    .main-contacto .contact-section .container p {
-      width: 50%;
-      text-align: center;
-      color: #666;
-      margin: auto; }
-    .main-contacto .contact-section .container .contact-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #dbd7d7b5;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
-      margin-bottom: 20px; }
-      .main-contacto .contact-section .container .contact-form .form-group {
-        margin-bottom: 15px; }
-        .main-contacto .contact-section .container .contact-form .form-group .input-text {
-          width: 95%;
-          margin: auto; }
-        .main-contacto .contact-section .container .contact-form .form-group textarea:focus {
-          outline: none;
-          border-color: #007bff;
-          background-color: #fff; }
-        .main-contacto .contact-section .container .contact-form .form-group textarea {
-          height: 150px;
-          width: 95%;
-          resize: none;
-          padding: 5px; }
+  .main-contacto section h1 {
+    padding-top: 85px;
+    text-align: center;
+    margin: auto; }
+  .main-contacto .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-contacto .contact-section .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 10px; }
+      .main-contacto .contact-section .container p {
+        width: 75%;
+        text-align: center;
+        color: #666;
+        margin: auto; }
+      .main-contacto .contact-section .container .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #dbd7d7b5;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-bottom: 20px; }
+        .main-contacto .contact-section .container .contact-form .form-group {
+          margin-bottom: 15px; }
+          .main-contacto .contact-section .container .contact-form .form-group .input-text {
+            width: 320px;
+            margin: auto; }
+          .main-contacto .contact-section .container .contact-form .form-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            background-color: #fff; }
+          .main-contacto .contact-section .container .contact-form .form-group textarea {
+            height: 150px;
+            width: 320px;
+            resize: none;
+            padding: 5px; }
 
 .button-contacto {
   background-color: #007bff;
@@ -577,4 +646,5 @@ main {
   background-color: #8ba814; }
 
 iframe {
-  margin: auto; }
+  margin: auto;
+  margin-top: 30px; }

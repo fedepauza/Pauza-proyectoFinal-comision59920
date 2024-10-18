@@ -1,14 +1,24 @@
 
 .main-contacto {
     font-family: sans-serif;
+    section {
+        h1 {
+            padding-top: 85px;
+            text-align: center;
+            margin: auto;
+        }
+    }
    
     .contact-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .container {
             max-width: 500px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
             p {
-                width: 50%;
+                width: 75%;
                 text-align: center;
                 color: #666;
                 margin: auto;
@@ -26,7 +36,7 @@
                 .form-group {
                     margin-bottom: 15px;
                     .input-text {
-                        width: 95%;
+                        width: 320px;
                         margin: auto;
                     }
                     textarea:focus {
@@ -36,7 +46,7 @@
                     }
                     textarea {
                         height: 150px;
-                        width: 95%;
+                        width: 320px;
                         resize: none;
                         padding: 5px;
                     }
@@ -64,4 +74,5 @@
 
 iframe {
     margin: auto;
+    margin-top: 30px;
 }

@@ -15,6 +15,11 @@ header {
             top: 7px;
             left: 70px;
             height: 55px;
+
+            @include tablet {
+                left: 25px;
+            }
+           
             }
             a {
                 img {
@@ -38,6 +43,10 @@ header {
                     margin-top: -5px;
                     margin-left: 80px;
                     cursor: pointer;
+
+                    @include tablet {
+                        margin-right: -60px ; 
+                    }
                 }
                 input {
                     display: none;
@@ -56,6 +65,14 @@ header {
                     justify-content: center;
                     flex-direction: column;
                     gap: 1.5rem;
+
+                    @include tablet {
+                        left: -110px;
+                    }
+                    @include promax {
+                        left: -90px;     
+                    }
+        
                     li {
                         list-style: none;
                         font-family: sans-serif;
@@ -76,4 +93,12 @@ input:checked + ul{
     width: 110%;
     height: 100vh;
     z-index: 3;
+
+    @include tablet {
+        width: 120%;
+    }
+    @include promax {
+        width: 130%;   
+    }
+
 }

@@ -1,4 +1,6 @@
-
+// * {
+//     border: 1px solid red;
+// }
 
 main {
     font-family: sans-serif;
@@ -7,6 +9,7 @@ main {
         width: 100%;
         display: flex;
         flex-direction: column;
+        // padding-top: 85px;
         margin: auto;
         margin-bottom: 40px;
         div {
@@ -26,13 +29,18 @@ main {
     .div-atencion {
         display: flex;
         position: relative;
-        min-width: 550px;
+        width: 75%;
         height: 580px;
         border-radius: 15px;
         margin-top: 10px;
         margin: auto;
         padding-top: 20px;
         background-color: rgba(250, 235, 215, 0.51);
+
+        @include promax {
+            height: 680px;
+        }
+
             h2 {
                 width: 80%;
                 font-size: map-get($text-size , size5 );
@@ -46,7 +54,7 @@ main {
                 flex-direction: column;
                 flex-wrap: wrap;
                 position: absolute;
-                top: 60px;
+                top: 70px;
                 // gap: 10px;
                 li {
                     list-style: none;
@@ -60,7 +68,7 @@ main {
                     p {
                         text-align: left;
                         margin-left: 0;
-                        width: 500px;
+                        width: 90%;
                     }
                 }
             }
@@ -74,6 +82,11 @@ main {
                 bottom: 40px;
                 left: 180px;
                 padding-top: 1px;
+
+                @include promax {
+                    left: 75px;
+                    bottom: 15px;
+                }
                 a {
                     text-decoration: none;
                     color: map-get($colores-texto , color1 );

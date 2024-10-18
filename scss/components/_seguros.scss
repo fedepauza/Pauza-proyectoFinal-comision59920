@@ -1,14 +1,8 @@
-// * {
-//     border: 0.5px solid red;
-// }
-main {
+.main-seguros {
     display: flex;
     flex-direction: column;
-    min-height: 100dvh;
     width: 100%;
     margin: 0;
-    padding-top: 85px;
-    padding-bottom: 125px;
     section {
         display: flex;
         flex-direction: column;
@@ -20,7 +14,7 @@ main {
         }
         h3 {
             font-size: map-get($text-size, size4 );
-            width: 30%;
+            width: 50%;
             text-align: center;
             font-weight: lighter;
             margin-top: -10px;
@@ -28,9 +22,64 @@ main {
         }
         p {
             font-size: map-get($text-size , size5 );
-            width: 25%;
+            width: 40%;
             text-align: center;
             margin-bottom: 40px;
+        }
+    }
+    .cobertura-full {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px ;
+        .conteiner-cobertura {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 210px;
+            text-align: center;
+            justify-content: center;
+            background-color: map-get($colores-sitio , color6 );
+            border-radius: 10px;
+            color: rgb(216, 212, 212);
+            h2 {
+                font-size: map-get($text-size , size4 );
+                margin-top: 40px;
+                margin-bottom: -40px;
+            }
+            p {
+                width: 80%;
+                font-size: map-get($text-size , size6 );
+                margin: auto;
+            }
+        }
+    }
+    .beneficios-full {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+        .conteiner-beneficios {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 210px;
+            text-align: center;
+            background-color: map-get($colores-sitio , color6 );
+            border-radius: 10px;
+            color: rgb(216, 212, 212);
+            h2 {
+                font-size: map-get($text-size , size4 );
+                margin-top: 40px;
+                margin-bottom: -40px;
+            }
+            p {
+                width: 80%;
+                font-size: map-get($text-size , size6 );
+                margin: auto;
+            }
         }
     }
 }
@@ -38,63 +87,6 @@ main {
 .beneficios-h2 {
     font-size: map-get($text-size , size4 );
 
-}
-
-.cobertura-full {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px ;
-    .conteiner-cobertura {
-        display: flex;
-        flex-direction: column;
-        width: 250px;
-        height: 210px;
-        text-align: center;
-        justify-content: center;
-        background-color: map-get($colores-sitio , color6 );
-        border-radius: 10px;
-        color: rgb(216, 212, 212);
-        h2 {
-            font-size: map-get($text-size , size4 );
-            margin-top: 50px;
-            margin-bottom: -60px;
-        }
-        p {
-            width: 80%;
-            font-size: map-get($text-size , size6 );
-            margin: auto;
-        }
-    }
-}
-
-.beneficios-full {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-    .conteiner-beneficios {
-        display: flex;
-        flex-direction: column;
-        width: 250px;
-        height: 210px;
-        text-align: center;
-        background-color: map-get($colores-sitio , color6 );
-        border-radius: 10px;
-        color: rgb(216, 212, 212);
-        h2 {
-            font-size: map-get($text-size , size4 );
-            margin-top: 50px;
-            margin-bottom: -50px;
-        }
-        p {
-            width: 80%;
-            font-size: map-get($text-size , size6 );
-            margin: auto;
-        }
-    }
 }
 
 .button-seguros {

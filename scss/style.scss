@@ -4,6 +4,8 @@
 
 @import "./utilities/variables";
 
+@import "./utilities/mediaqueries";
+
 @import "./base/reset";
 
 @import "./layout/header";
@@ -14,19 +16,23 @@
 
 @import "./components/navbar";
 
+@import "./components/seguros";
+
 @import "./components/unidades";
 
 @import "./components/nuestras-unidades";
 
 @import "./components/oportunidades";
 
-@import "./components/seguros";
+
 
 @import "./components/permutas";
 
 @import "./components/atencion-personalizada";
 
 @import "./components/contacto";
+
+
 
 
 
