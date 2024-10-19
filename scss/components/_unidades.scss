@@ -49,6 +49,9 @@ body {
                         width: 100px;
                         height: 1.5rem;
                         background-color: map-get($colores-sitio , color1 );
+                        @include promax {
+                            bottom: -20px;
+                        }
                         a {
                             text-decoration: none;
                             color: antiquewhite;
@@ -76,6 +79,10 @@ body {
         background-color: map-get($colores-sitio , color1 );
         margin: auto;
         margin-bottom: 10px;
+
+        @include promax {
+            bottom: -5px;
+        }
         
     }
 

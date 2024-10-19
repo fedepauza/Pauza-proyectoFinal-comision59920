@@ -38,13 +38,22 @@ main {
     main div section h1 {
       font-size: 4rem;
       color: #f0ede9; }
+      @media (max-width: 430px) {
+        main div section h1 {
+          font-size: 3rem;
+          padding-top: 0;
+          margin-top: 100px; } }
     main div section h2 {
       font-size: 1.5rem;
-      color: #f0ede9; }
+      color: #f0ede9;
+      text-align: center; }
     main div section p {
       width: 75%;
       font-size: 1rem;
       color: #f0ede9; }
+      @media (max-width: 430px) {
+        main div section p {
+          width: 85%; } }
 
 .section-principal {
   background-image: url(../Assets/img/main-fondo.jpg);
@@ -68,7 +77,7 @@ footer section {
   margin-bottom: 0;
   padding-top: 0px;
   gap: 20px; }
-  @media (max-width: 428px) {
+  @media (max-width: 430px) {
     footer section {
       padding-top: 7px;
       gap: 0; } }
@@ -80,7 +89,7 @@ footer section {
     @media (max-width: 768px) {
       footer section p {
         font-size: .625rem; } }
-    @media (max-width: 428px) {
+    @media (max-width: 430px) {
       footer section p {
         text-align: left;
         width: 80%;
@@ -90,7 +99,7 @@ footer section {
     font-size: .875rem;
     text-align: right;
     margin-right: 20px; }
-    @media (max-width: 428px) {
+    @media (max-width: 430px) {
       footer section h3 {
         width: 40%;
         margin-right: 5px;
@@ -129,6 +138,9 @@ header {
     position: relative;
     padding: 0 70px;
     z-index: 3; }
+    @media (max-width: 430px) {
+      header nav {
+        height: 35px; } }
     header nav label {
       padding: 10px;
       margin-top: -5px;
@@ -137,6 +149,9 @@ header {
       @media (max-width: 768px) {
         header nav label {
           margin-right: -60px; } }
+      @media (max-width: 430px) {
+        header nav label {
+          margin-top: 25px; } }
     header nav input {
       display: none; }
     header nav ul {
@@ -156,13 +171,16 @@ header {
       @media (max-width: 768px) {
         header nav ul {
           left: -110px; } }
-      @media (max-width: 428px) {
+      @media (max-width: 430px) {
         header nav ul {
           left: -90px; } }
       header nav ul li {
         list-style: none;
         font-family: sans-serif;
         font-size: 1.5rem; }
+        @media (max-width: 430px) {
+          header nav ul li {
+            margin-right: 30px; } }
       header nav ul a {
         text-decoration: none;
         color: #f0ede9;
@@ -175,7 +193,7 @@ input:checked + ul {
   @media (max-width: 768px) {
     input:checked + ul {
       width: 120%; } }
-  @media (max-width: 428px) {
+  @media (max-width: 430px) {
     input:checked + ul {
       width: 130%; } }
 
@@ -316,6 +334,9 @@ body {
           width: 100px;
           height: 1.5rem;
           background-color: #7F2213; }
+          @media (max-width: 430px) {
+            body main section article div button {
+              bottom: -20px; } }
           body main section article div button a {
             text-decoration: none;
             color: antiquewhite; }
@@ -335,6 +356,9 @@ body {
   background-color: #7F2213;
   margin: auto;
   margin-bottom: 10px; }
+  @media (max-width: 430px) {
+    .button-ver-mas {
+      bottom: -5px; } }
 
 .button-ver-mas a {
   text-decoration: none;
@@ -424,7 +448,7 @@ main {
     font-size: 1.5rem;
     text-decoration: underline;
     margin-bottom: 20px; }
-    @media (max-width: 428px) {
+    @media (max-width: 430px) {
       main section h1 {
         margin: auto;
         margin-bottom: 20px; } }
@@ -449,7 +473,7 @@ main {
       @media (max-width: 768px) {
         main .permutas-section .div-listas {
           height: 450px; } }
-      @media (max-width: 428px) {
+      @media (max-width: 430px) {
         main .permutas-section .div-listas {
           height: 500px; } }
       main .permutas-section .div-listas h2 {
@@ -460,7 +484,7 @@ main {
         margin-bottom: 20px;
         margin-top: 30px;
         margin-left: 0px; }
-        @media (max-width: 428px) {
+        @media (max-width: 430px) {
           main .permutas-section .div-listas h2 {
             margin-bottom: 10px; } }
       main .permutas-section .div-listas .permutas-ul {
@@ -505,7 +529,7 @@ main {
   @media (max-width: 768px) {
     .button-permuta {
       bottom: 30px; } }
-  @media (max-width: 428px) {
+  @media (max-width: 430px) {
     .button-permuta {
       bottom: 20px;
       left: 120px; } }
@@ -515,7 +539,8 @@ main {
 
 main {
   font-family: sans-serif;
-  width: 100%; }
+  width: 100%;
+  padding-top: 30px; }
   main .atencion-personalizada {
     width: 100%;
     display: flex;
@@ -542,7 +567,7 @@ main {
       margin: auto;
       padding-top: 20px;
       background-color: rgba(250, 235, 215, 0.51); }
-      @media (max-width: 428px) {
+      @media (max-width: 430px) {
         main .atencion-personalizada .div-atencion {
           height: 680px; } }
       main .atencion-personalizada .div-atencion h2 {
@@ -580,7 +605,7 @@ main {
         bottom: 40px;
         left: 180px;
         padding-top: 1px; }
-        @media (max-width: 428px) {
+        @media (max-width: 430px) {
           main .atencion-personalizada .div-atencion button {
             left: 75px;
             bottom: 15px; } }
