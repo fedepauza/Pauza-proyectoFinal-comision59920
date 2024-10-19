@@ -42,6 +42,14 @@ main {
             height: 680px;
         }
 
+        @include se {
+            height: 700px;
+        }
+
+        @include mini {
+            width: 85%;
+        }
+
             h2 {
                 width: 80%;
                 font-size: map-get($text-size , size5 );
@@ -56,6 +64,9 @@ main {
                 flex-wrap: wrap;
                 position: absolute;
                 top: 70px;
+                @include mini {
+                    left: -10px;
+                }
                 // gap: 10px;
                 li {
                     list-style: none;
@@ -87,6 +98,14 @@ main {
                 @include promax {
                     left: 75px;
                     bottom: 15px;
+                }
+
+                @include se {
+                    left: 55px;
+                }
+
+                @include mini {
+                    left: 45px;
                 }
                 a {
                     text-decoration: none;

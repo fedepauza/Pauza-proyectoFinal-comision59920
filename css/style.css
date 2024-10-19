@@ -38,20 +38,29 @@ main {
     main div section h1 {
       font-size: 4rem;
       color: #f0ede9; }
-      @media (max-width: 430px) {
+      @media (max-width: 435px) {
         main div section h1 {
           font-size: 3rem;
           padding-top: 0;
           margin-top: 100px; } }
+      @media (max-width: 380px) {
+        main div section h1 {
+          margin-top: 50px; } }
+      @media (max-width: 330px) {
+        main div section h1 {
+          font-size: 2.125rem; } }
     main div section h2 {
       font-size: 1.5rem;
       color: #f0ede9;
       text-align: center; }
+      @media (max-width: 330px) {
+        main div section h2 {
+          font-size: 1rem; } }
     main div section p {
       width: 75%;
       font-size: 1rem;
       color: #f0ede9; }
-      @media (max-width: 430px) {
+      @media (max-width: 435px) {
         main div section p {
           width: 85%; } }
 
@@ -74,10 +83,8 @@ footer section {
   justify-content: space-between;
   background-color: black;
   margin-top: 2.5rem;
-  margin-bottom: 0;
-  padding-top: 0px;
-  gap: 20px; }
-  @media (max-width: 430px) {
+  margin-bottom: 0; }
+  @media (max-width: 435px) {
     footer section {
       padding-top: 7px;
       gap: 0; } }
@@ -89,7 +96,7 @@ footer section {
     @media (max-width: 768px) {
       footer section p {
         font-size: .625rem; } }
-    @media (max-width: 430px) {
+    @media (max-width: 435px) {
       footer section p {
         text-align: left;
         width: 80%;
@@ -99,11 +106,14 @@ footer section {
     font-size: .875rem;
     text-align: right;
     margin-right: 20px; }
-    @media (max-width: 430px) {
+    @media (max-width: 435px) {
       footer section h3 {
         width: 40%;
         margin-right: 5px;
         text-align: right; } }
+    @media (max-width: 330px) {
+      footer section h3 {
+        font-size: .6875rem; } }
 
 header {
   position: fixed;
@@ -138,7 +148,7 @@ header {
     position: relative;
     padding: 0 70px;
     z-index: 3; }
-    @media (max-width: 430px) {
+    @media (max-width: 435px) {
       header nav {
         height: 35px; } }
     header nav label {
@@ -149,7 +159,7 @@ header {
       @media (max-width: 768px) {
         header nav label {
           margin-right: -60px; } }
-      @media (max-width: 430px) {
+      @media (max-width: 435px) {
         header nav label {
           margin-top: 25px; } }
     header nav input {
@@ -171,16 +181,22 @@ header {
       @media (max-width: 768px) {
         header nav ul {
           left: -110px; } }
-      @media (max-width: 430px) {
+      @media (max-width: 435px) {
+        header nav ul {
+          left: -90px; } }
+      @media (max-width: 330px) {
         header nav ul {
           left: -90px; } }
       header nav ul li {
         list-style: none;
         font-family: sans-serif;
         font-size: 1.5rem; }
-        @media (max-width: 430px) {
+        @media (max-width: 435px) {
           header nav ul li {
             margin-right: 30px; } }
+        @media (max-width: 330px) {
+          header nav ul li {
+            font-size: 1rem; } }
       header nav ul a {
         text-decoration: none;
         color: #f0ede9;
@@ -193,9 +209,12 @@ input:checked + ul {
   @media (max-width: 768px) {
     input:checked + ul {
       width: 120%; } }
-  @media (max-width: 430px) {
+  @media (max-width: 435px) {
     input:checked + ul {
       width: 130%; } }
+  @media (max-width: 330px) {
+    input:checked + ul {
+      width: 140%; } }
 
 .main-seguros {
   display: flex;
@@ -217,11 +236,17 @@ input:checked + ul {
       font-weight: lighter;
       margin-top: -10px;
       margin-bottom: 5px; }
+      @media (max-width: 380px) {
+        .main-seguros section h3 {
+          width: 75%; } }
     .main-seguros section p {
       font-size: 1rem;
       width: 40%;
       text-align: center;
       margin-bottom: 40px; }
+      @media (max-width: 380px) {
+        .main-seguros section p {
+          width: 75%; } }
   .main-seguros .cobertura-full {
     display: flex;
     flex-direction: row;
@@ -272,6 +297,9 @@ input:checked + ul {
 
 .beneficios-h2 {
   font-size: 1.5rem; }
+  @media (max-width: 380px) {
+    .beneficios-h2 {
+      text-align: center; } }
 
 .button-seguros {
   display: flex;
@@ -334,7 +362,7 @@ body {
           width: 100px;
           height: 1.5rem;
           background-color: #7F2213; }
-          @media (max-width: 430px) {
+          @media (max-width: 435px) {
             body main section article div button {
               bottom: -20px; } }
           body main section article div button a {
@@ -356,7 +384,7 @@ body {
   background-color: #7F2213;
   margin: auto;
   margin-bottom: 10px; }
-  @media (max-width: 430px) {
+  @media (max-width: 435px) {
     .button-ver-mas {
       bottom: -5px; } }
 
@@ -388,6 +416,12 @@ input {
 
 label {
   font-size: 1.125rem; }
+  @media (max-width: 380px) {
+    label {
+      font-size: .875rem; } }
+  @media (max-width: 330px) {
+    label {
+      font-size: .6875rem; } }
 
 .main-oportunidades {
   width: 100dvh;
@@ -448,7 +482,7 @@ main {
     font-size: 1.5rem;
     text-decoration: underline;
     margin-bottom: 20px; }
-    @media (max-width: 430px) {
+    @media (max-width: 435px) {
       main section h1 {
         margin: auto;
         margin-bottom: 20px; } }
@@ -473,9 +507,15 @@ main {
       @media (max-width: 768px) {
         main .permutas-section .div-listas {
           height: 450px; } }
-      @media (max-width: 430px) {
+      @media (max-width: 435px) {
         main .permutas-section .div-listas {
           height: 500px; } }
+      @media (max-width: 380px) {
+        main .permutas-section .div-listas {
+          height: 550px; } }
+      @media (max-width: 330px) {
+        main .permutas-section .div-listas {
+          height: 600px; } }
       main .permutas-section .div-listas h2 {
         width: 40%;
         text-align: left;
@@ -484,7 +524,7 @@ main {
         margin-bottom: 20px;
         margin-top: 30px;
         margin-left: 0px; }
-        @media (max-width: 430px) {
+        @media (max-width: 435px) {
           main .permutas-section .div-listas h2 {
             margin-bottom: 10px; } }
       main .permutas-section .div-listas .permutas-ul {
@@ -529,10 +569,16 @@ main {
   @media (max-width: 768px) {
     .button-permuta {
       bottom: 30px; } }
-  @media (max-width: 430px) {
+  @media (max-width: 435px) {
     .button-permuta {
       bottom: 20px;
       left: 120px; } }
+  @media (max-width: 380px) {
+    .button-permuta {
+      left: 95px; } }
+  @media (max-width: 330px) {
+    .button-permuta {
+      left: 65px; } }
   .button-permuta a {
     text-decoration: none;
     color: #f0ede9; }
@@ -567,9 +613,15 @@ main {
       margin: auto;
       padding-top: 20px;
       background-color: rgba(250, 235, 215, 0.51); }
-      @media (max-width: 430px) {
+      @media (max-width: 435px) {
         main .atencion-personalizada .div-atencion {
           height: 680px; } }
+      @media (max-width: 380px) {
+        main .atencion-personalizada .div-atencion {
+          height: 700px; } }
+      @media (max-width: 330px) {
+        main .atencion-personalizada .div-atencion {
+          width: 85%; } }
       main .atencion-personalizada .div-atencion h2 {
         width: 80%;
         font-size: 1rem;
@@ -583,6 +635,9 @@ main {
         flex-wrap: wrap;
         position: absolute;
         top: 70px; }
+        @media (max-width: 330px) {
+          main .atencion-personalizada .div-atencion ul {
+            left: -10px; } }
         main .atencion-personalizada .div-atencion ul li {
           list-style: none; }
           main .atencion-personalizada .div-atencion ul li h3 {
@@ -605,10 +660,16 @@ main {
         bottom: 40px;
         left: 180px;
         padding-top: 1px; }
-        @media (max-width: 430px) {
+        @media (max-width: 435px) {
           main .atencion-personalizada .div-atencion button {
             left: 75px;
             bottom: 15px; } }
+        @media (max-width: 380px) {
+          main .atencion-personalizada .div-atencion button {
+            left: 55px; } }
+        @media (max-width: 330px) {
+          main .atencion-personalizada .div-atencion button {
+            left: 45px; } }
         main .atencion-personalizada .div-atencion button a {
           text-decoration: none;
           color: #f0ede9; }
@@ -647,6 +708,9 @@ main {
           .main-contacto .contact-section .container .contact-form .form-group .input-text {
             width: 320px;
             margin: auto; }
+            @media (max-width: 330px) {
+              .main-contacto .contact-section .container .contact-form .form-group .input-text {
+                width: 280px; } }
           .main-contacto .contact-section .container .contact-form .form-group textarea:focus {
             outline: none;
             border-color: #007bff;
@@ -656,6 +720,9 @@ main {
             width: 320px;
             resize: none;
             padding: 5px; }
+            @media (max-width: 330px) {
+              .main-contacto .contact-section .container .contact-form .form-group textarea {
+                width: 280px; } }
 
 .button-contacto {
   background-color: #007bff;
@@ -673,3 +740,9 @@ main {
 iframe {
   margin: auto;
   margin-top: 30px; }
+  @media (max-width: 380px) {
+    iframe {
+      width: 95%; } }
+  @media (max-width: 330px) {
+    iframe {
+      margin-left: 8px; } }

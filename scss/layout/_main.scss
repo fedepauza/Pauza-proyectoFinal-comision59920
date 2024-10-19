@@ -23,11 +23,22 @@ main {
                     padding-top: 0;
                     margin-top: 100px;
                 }
+                @include se {
+                    margin-top: 50px;
+                }
+
+                @include mini {
+                    font-size: 2.125rem;
+                }
             }
             h2 {
                 font-size: map-get($text-size , size4 );
                 color: map-get($colores-texto ,color1 );
                 text-align: center;
+
+                @include mini {
+                    font-size: 1rem;
+                }
             }
             p {
                 width: 75%;

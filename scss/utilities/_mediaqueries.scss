@@ -1,3 +1,9 @@
+@mixin tabletxl {
+    @media (max-width:1030px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width:768px) {
         @content;
@@ -5,7 +11,20 @@
 }
 
 @mixin promax {
-    @media (max-width:430px) {
+    @media (max-width:435px) {
         @content;
     }
 }
+
+@mixin se {
+    @media (max-width:380px) {
+        @content;
+    }
+}
+
+@mixin mini {
+    @media (max-width:330px) {
+        @content;
+    }
+}
+

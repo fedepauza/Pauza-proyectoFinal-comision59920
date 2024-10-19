@@ -38,6 +38,9 @@
                     .input-text {
                         width: 320px;
                         margin: auto;
+                        @include mini {
+                            width: 280px;
+                        }
                     }
                     textarea:focus {
                         outline: none;
@@ -49,6 +52,10 @@
                         width: 320px;
                         resize: none;
                         padding: 5px;
+
+                        @include mini {
+                            width: 280px;
+                        }
                     }
                     
                 }
@@ -75,4 +82,12 @@
 iframe {
     margin: auto;
     margin-top: 30px;
+
+    @include se {
+        width: 95%;
+    }
+
+    @include mini {
+        margin-left: 8px;
+    }
 }

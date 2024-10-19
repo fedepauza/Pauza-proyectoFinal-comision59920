@@ -19,12 +19,18 @@
             font-weight: lighter;
             margin-top: -10px;
             margin-bottom: 5px;
+            @include se {
+                width: 75%;
+            }
         }
         p {
             font-size: map-get($text-size , size5 );
             width: 40%;
             text-align: center;
             margin-bottom: 40px;
+            @include se {
+                width: 75%;
+            }
         }
     }
     .cobertura-full {
@@ -47,6 +53,7 @@
                 font-size: map-get($text-size , size4 );
                 margin-top: 40px;
                 margin-bottom: -40px;
+                
             }
             p {
                 width: 80%;
@@ -86,6 +93,9 @@
 
 .beneficios-h2 {
     font-size: map-get($text-size , size4 );
+    @include se {
+        text-align: center;
+    }
 
 }
 

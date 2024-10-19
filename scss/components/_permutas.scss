@@ -47,6 +47,14 @@ main {
             height: 500px;
         }
 
+        @include se {
+            height: 550px;
+        }
+
+        @include mini {
+            height: 600px;
+        }
+
         h2 {
             width: 40%;
             text-align: left;
@@ -119,7 +127,14 @@ main {
                 bottom: 20px;
                 left: 120px;
             }
+
+            @include se {
+                left: 95px;
+            }
             
+            @include mini {
+                left: 65px;
+            }
             a {
                 text-decoration: none;
                 color: map-get($colores-texto , color1 );

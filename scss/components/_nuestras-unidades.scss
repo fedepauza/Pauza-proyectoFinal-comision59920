@@ -29,5 +29,14 @@ input {
 
 label {
     font-size: 1.125rem;
+
+    @include se {
+        font-size: .875rem;
+    }
+
+    @include mini {
+        font-size: .6875rem;
+    }
 }
+
 

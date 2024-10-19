@@ -80,6 +80,10 @@ header {
                     @include promax {
                         left: -90px;     
                     }
+
+                    @include mini {
+                        left: -90px;
+                    }
         
                     li {
                         list-style: none;
@@ -88,6 +92,10 @@ header {
                         
                         @include promax {
                             margin-right: 30px;
+                        }
+
+                        @include mini {
+                            font-size: 1rem;
                         }
                     }
                     a{
@@ -111,6 +119,10 @@ input:checked + ul{
     }
     @include promax {
         width: 130%;   
+    }
+
+    @include mini {
+        width: 140%;
     }
 
 }

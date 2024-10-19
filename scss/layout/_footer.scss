@@ -13,8 +13,13 @@ footer {
         background-color: black;
         margin-top: 2.5rem;
         margin-bottom: 0;
-        padding-top: 0px;
-        gap: 20px;
+        // padding-top: 0px;
+        // gap: 20px;
+
+        // @include tabletxl {
+        //     position: absolute;
+        //     bottom: 0;
+        // }
 
         @include promax {
             padding-top: 7px;
@@ -47,6 +52,10 @@ footer {
                     width: 40%;
                     margin-right: 5px;
                     text-align: right ;
+                }
+
+                @include mini {
+                    font-size: .6875rem;
                 }
             }
     }
