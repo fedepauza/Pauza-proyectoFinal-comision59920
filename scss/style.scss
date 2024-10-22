@@ -1,10 +1,12 @@
 // resset
 
+@import "./utilities/mediaqueries";
+
 @import "./utilities/maps";
 
 @import "./utilities/variables";
 
-@import "./utilities/mediaqueries";
+@import "./utilities/variablesglobales";
 
 @import "./base/reset";
 
@@ -24,7 +26,9 @@
 
 @import "./components/oportunidades";
 
+@import "./components/redes-sociales";
 
+@import "./components/gestoria";
 
 @import "./components/permutas";
 

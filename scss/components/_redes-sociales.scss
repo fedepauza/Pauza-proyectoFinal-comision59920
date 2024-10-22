@@ -1,0 +1,19 @@
+// * {
+//     border: 1px solid red ;
+// }
+
+.redes-sociales {
+    .redes-wpp {
+        position: fixed;
+        background-color: #25D366;
+        border-radius: 100%;
+        margin-left: 17px;
+        margin-bottom: -30px;
+        // padding-left: 4px;
+        bottom: 100px;
+        z-index: 5;
+        a {
+            color: white;
+        }
+    }
+}

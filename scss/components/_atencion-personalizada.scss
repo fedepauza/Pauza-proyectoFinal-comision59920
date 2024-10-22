@@ -6,14 +6,22 @@ main {
     font-family: sans-serif;
     width: 100%;
     padding-top: 30px;
+
+    @include tabletxl {
+        height: 100dvh;
+    }
+    @include tablet {
+        height: 100%;
+    }
+
     .atencion-personalizada {
         width: 100%;
         display: flex;
         flex-direction: column;
-        // padding-top: 85px;
         margin: auto;
         margin-bottom: 40px;
         div {
+            margin-bottom: 30px;
             h1 {
                 font-size: map-get($text-size , size4 );
                 font-weight: bold;
@@ -30,19 +38,23 @@ main {
     .div-atencion {
         display: flex;
         position: relative;
-        width: 75%;
+        width: 60%;
         height: 580px;
         border-radius: 15px;
-        margin-top: 10px;
+        justify-content: center;
         margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
         padding-top: 20px;
         background-color: rgba(250, 235, 215, 0.51);
 
         @include promax {
+            width: 75%;
             height: 680px;
         }
 
         @include se {
+            width: 75%;
             height: 700px;
         }
 
@@ -67,7 +79,6 @@ main {
                 @include mini {
                     left: -10px;
                 }
-                // gap: 10px;
                 li {
                     list-style: none;
                     h3 {
@@ -92,7 +103,6 @@ main {
                 border-radius: 5px;
                 background-color: map-get($colores-sitio , color2 );
                 bottom: 40px;
-                left: 180px;
                 padding-top: 1px;
 
                 @include promax {
@@ -115,8 +125,3 @@ main {
         }
     }
 }
-
-        // article {
-        //     display: flex;
-        //     width: 100%;
-            

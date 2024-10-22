@@ -1,6 +1,8 @@
 body {
-    background-color: map-get($colores-sitio , color5 );
+    // background-color: map-get($colores-sitio , color5 );
+    background-color: rgb(255, 255, 255);
     main {
+        font-family: $font-text ;
         section {
             margin-top: 0;
             justify-content: center;
@@ -48,13 +50,15 @@ body {
                         bottom: -5px;
                         width: 100px;
                         height: 1.5rem;
-                        background-color: map-get($colores-sitio , color1 );
+                        padding-top: 1px;
+                        // background-color: map-get($colores-sitio , color1 );
+                        background-color: map-get($colores-sitio , color3 );
                         @include promax {
                             bottom: -20px;
                         }
                         a {
                             text-decoration: none;
-                            color: antiquewhite;
+                            color: rgb(241, 241, 241);
                         }
                     }
                 }
@@ -66,6 +70,7 @@ body {
     .descripcion {
         left: 15px;
         top: 2px;
+        
     }
 
     .button-ver-mas {
@@ -76,7 +81,7 @@ body {
         border-radius: 5px;
         width: 100px;
         height: 1.5rem;
-        background-color: map-get($colores-sitio , color1 );
+        background-color: map-get($colores-sitio , color3 );
         margin: auto;
         margin-bottom: 10px;
 
