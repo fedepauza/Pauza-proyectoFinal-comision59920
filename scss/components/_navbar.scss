@@ -19,7 +19,6 @@ header {
             @include tablet {
                 left: 25px;
             }
-           
             }
             a {
                 img {
@@ -59,7 +58,7 @@ header {
                 input {
                     display: none;
                 }
-                ul {
+                ul{
                     width: 100%;
                     background-image: url(../Assets/img/textura.jpeg);
                     background-size: cover;
@@ -79,6 +78,10 @@ header {
                     }
                     @include promax {
                         left: -90px;     
+                    }
+
+                    @include se {
+                        gap: 10px;
                     }
 
                     @include mini {
@@ -105,15 +108,22 @@ header {
                     }
                 }
         }
-}
 
+    .logo-redes {
+        width: 50px;
+
+        @include se {
+            width: 30px;    
+        }
+    }
+}
 // Menu hamburguesa on/off 
 
 input:checked + ul{
     width: 110%;
     height: 100vh;
     z-index: 3;
-
+    
     @include tablet {
         width: 120%;
     }

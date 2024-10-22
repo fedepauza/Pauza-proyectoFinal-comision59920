@@ -5,15 +5,30 @@
 .redes-sociales {
     .redes-wpp {
         position: fixed;
-        background-color: #25D366;
-        border-radius: 100%;
-        margin-left: 17px;
-        margin-bottom: -30px;
-        // padding-left: 4px;
-        bottom: 100px;
-        z-index: 5;
+        bottom: 80px;
+        left: 20px;
+        z-index: 2;
+        @include mini {
+            bottom: 64px;
+            left: 10px;
+        }
+        @include se {
+            bottom: 62px;
+            left: 10px;
+        }
+
+        @include promax {
+            bottom: 62px;
+        }
         a {
             color: white;
+            img {
+                width: 50px;
+                
+                @include promax {
+                    width: 30px;
+                }
+            }
         }
     }
 }

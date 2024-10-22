@@ -1,0 +1,30 @@
+main {
+    position: relative;
+    .volver-arriba {
+        a {
+            img {
+                position: fixed;
+                bottom: 80px;
+                right: 20px;
+                transform: rotate(-90deg);
+                width: 50px;
+                z-index: 2;
+
+                @include mini {
+                    bottom: 64px;
+                    right: 8px;
+                }
+
+                @include se {
+                    bottom: 62px;
+                    right: 8px;
+                }
+
+                @include promax {
+                    width: 30px;
+                    bottom: 62px;
+                }
+            }
+        }
+    }
+}
