@@ -272,7 +272,7 @@ input:checked + ul {
       justify-content: center;
       background-color: rgba(29, 28, 28, 0.584);
       border-radius: 10px;
-      color: #d8d4d4; }
+      color: #ece7e7; }
       .main-seguros .cobertura-full .conteiner-cobertura h2 {
         font-size: 1.5rem;
         margin-top: 40px;
@@ -295,7 +295,7 @@ input:checked + ul {
       text-align: center;
       background-color: rgba(29, 28, 28, 0.584);
       border-radius: 10px;
-      color: #d8d4d4; }
+      color: #ece7e7; }
       .main-seguros .beneficios-full .conteiner-beneficios h2 {
         font-size: 1.5rem;
         margin-top: 40px;
@@ -368,13 +368,7 @@ body {
             right: 25px; }
           body main section article div button {
             position: absolute;
-            border: none;
-            border-radius: 5px;
-            bottom: -5px;
-            width: 100px;
-            height: 1.5rem;
-            padding-top: 1px;
-            background-color: #CC3D1B; }
+            bottom: -5px; }
             @media (max-width: 450px) {
               body main section article div button {
                 bottom: -20px; } }
@@ -386,15 +380,18 @@ body {
   left: 15px;
   top: 2px; }
 
-.button-ver-mas {
-  display: flex;
-  justify-content: center;
-  position: relative;
+.button-a, .button-ver-mas, .button-oportunidades {
   border: none;
   border-radius: 5px;
   width: 100px;
   height: 1.5rem;
-  background-color: #CC3D1B;
+  padding-top: 1px;
+  background-color: #CC3D1B; }
+
+.button-ver-mas {
+  display: flex;
+  justify-content: center;
+  position: relative;
   margin: auto;
   margin-bottom: 10px; }
   @media (max-width: 450px) {
@@ -435,6 +432,11 @@ label {
   @media (max-width: 330px) {
     label {
       font-size: .6875rem; } }
+
+@media (max-width: 1023px) {
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; } }
 
 .main-oportunidades {
   width: 100dvh;

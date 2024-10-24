@@ -1,7 +1,12 @@
 // * {
 //     border: 0.1px solid red;
 // }
-
+body{
+    @include tabletxl {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+}
 .main-oportunidades {
     width: 100dvh;
     height: 100vh;
@@ -53,6 +58,7 @@
 }
 
 .button-oportunidades {
+    @extend .button-a;
     position: absolute;
     bottom: -20px;
     a {

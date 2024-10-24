@@ -4,6 +4,7 @@
     width: 100%;
     margin: 0;
     position: relative;
+    
     section {
         display: flex;
         flex-direction: column;
@@ -49,7 +50,7 @@
             justify-content: center;
             background-color: map-get($colores-sitio , color6 );
             border-radius: 10px;
-            color: rgb(216, 212, 212);
+            color: rgb(236, 231, 231);
             h2 {
                 font-size: map-get($text-size , size4 );
                 margin-top: 40px;
@@ -77,7 +78,7 @@
             text-align: center;
             background-color: map-get($colores-sitio , color6 );
             border-radius: 10px;
-            color: rgb(216, 212, 212);
+            color:  rgb(236, 231, 231);
             h2 {
                 font-size: map-get($text-size , size4 );
                 margin-top: 40px;

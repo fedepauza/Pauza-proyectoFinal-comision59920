@@ -1,5 +1,6 @@
+$font-text: 'note sans';
+
 body {
-    // background-color: map-get($colores-sitio , color5 );
     background-color: rgb(255, 255, 255);
     main {
         font-family: $font-text ;
@@ -43,16 +44,9 @@ body {
                         bottom: -10px;
                         right: 25px;
                     }
-                    button {
+                    button{
                         position: absolute;
-                        border: none;
-                        border-radius: 5px;
                         bottom: -5px;
-                        width: 100px;
-                        height: 1.5rem;
-                        padding-top: 1px;
-                        // background-color: map-get($colores-sitio , color1 );
-                        background-color: map-get($colores-sitio , color3 );
                         @include promax {
                             bottom: -20px;
                         }
@@ -73,15 +67,20 @@ body {
         
     }
 
-    .button-ver-mas {
-        display: flex;
-        justify-content: center;
-        position: relative;
+    .button-a {
         border: none;
         border-radius: 5px;
         width: 100px;
         height: 1.5rem;
+        padding-top: 1px;
         background-color: map-get($colores-sitio , color3 );
+    }
+
+    .button-ver-mas {
+        @extend .button-a;
+        display: flex;
+        justify-content: center;
+        position: relative;
         margin: auto;
         margin-bottom: 10px;
 

@@ -18,7 +18,6 @@ main {
                 font-size: map-get($text-size , size );
                 color: map-get($colores-texto ,color1 );
                 margin-top: -20px;
-                
                 @include promax {
                     font-size: map-get($text-size , size1 );
                     padding-top: 0;
