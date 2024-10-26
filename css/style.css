@@ -402,9 +402,6 @@ body {
   text-decoration: none;
   color: antiquewhite; }
 
-* {
-  border: 0.5px solid red; }
-
 #auto:checked ~ #imagenes .motos {
   display: none; }
 
