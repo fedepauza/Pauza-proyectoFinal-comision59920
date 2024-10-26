@@ -402,6 +402,9 @@ body {
   text-decoration: none;
   color: antiquewhite; }
 
+* {
+  border: 0.5px solid red; }
+
 #auto:checked ~ #imagenes .motos {
   display: none; }
 
@@ -423,6 +426,15 @@ body {
 input {
   margin-bottom: 30px;
   margin-left: 20px; }
+
+@media (max-width: 450px) {
+  .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px !important; }
+    .conteiner #imagenes {
+      width: 80%; } }
 
 label {
   font-size: 1.125rem; }
@@ -761,16 +773,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .main-contacto .contact-section .container {
+    .main-contacto .contact-section .container-contacto {
       max-width: 500px;
       margin: 0 auto;
       padding: 10px; }
-      .main-contacto .contact-section .container p {
+      .main-contacto .contact-section .container-contacto p {
         width: 75%;
         text-align: center;
         color: #666;
         margin: auto; }
-      .main-contacto .contact-section .container .contact-form {
+      .main-contacto .contact-section .container-contacto .contact-form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -780,25 +792,25 @@ main {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-top: 20px;
         margin-bottom: 20px; }
-        .main-contacto .contact-section .container .contact-form .form-group {
+        .main-contacto .contact-section .container-contacto .contact-form .form-group {
           margin-bottom: 15px; }
-          .main-contacto .contact-section .container .contact-form .form-group .input-text {
+          .main-contacto .contact-section .container-contacto .contact-form .form-group .input-text {
             width: 320px;
             margin: auto; }
             @media (max-width: 330px) {
-              .main-contacto .contact-section .container .contact-form .form-group .input-text {
+              .main-contacto .contact-section .container-contacto .contact-form .form-group .input-text {
                 width: 280px; } }
-          .main-contacto .contact-section .container .contact-form .form-group textarea:focus {
+          .main-contacto .contact-section .container-contacto .contact-form .form-group textarea:focus {
             outline: none;
             border-color: #007bff;
             background-color: #fff; }
-          .main-contacto .contact-section .container .contact-form .form-group textarea {
+          .main-contacto .contact-section .container-contacto .contact-form .form-group textarea {
             height: 150px;
             width: 320px;
             resize: none;
             padding: 5px; }
             @media (max-width: 330px) {
-              .main-contacto .contact-section .container .contact-form .form-group textarea {
+              .main-contacto .contact-section .container-contacto .contact-form .form-group textarea {
                 width: 280px; } }
 
 .button-contacto {

@@ -1,3 +1,7 @@
+* {
+    border: 0.5px solid red;
+}
+
 #auto:checked ~ #imagenes .motos {
     display: none;
 }
@@ -25,8 +29,21 @@
 input {
     margin-bottom: 30px;
     margin-left: 20px;
+    // @include promax {
+    //      width: 30px;
+    // }
 }
-
+.conteiner {
+    @include promax {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 300px !important;
+        #imagenes {
+            width: 80%;
+        }
+    }
+}
 label {
     font-size: 1.125rem;
 
@@ -37,6 +54,10 @@ label {
     @include mini {
         font-size: .6875rem;
     }
+
+    // @include promax {
+    //  width: 20px;
+    // }
 }
 
 
