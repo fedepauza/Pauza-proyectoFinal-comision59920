@@ -8,7 +8,7 @@ main {
     padding-top: 30px;
 
     @include tabletxl {
-        height: 100dvh;
+        height: 100%;
     }
     @include tablet {
         height: 100%;

@@ -2,8 +2,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100dvh;
     margin: 0;
     position: relative;
+    @include tablet {
+        height: 100%;
+    }
     
     section {
         display: flex;

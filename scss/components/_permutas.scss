@@ -46,14 +46,17 @@ main {
         }
 
         @include promax {
+            width: 400px;
             height: 500px;
         }
 
         @include se {
+            width: 350px;
             height: 550px;
         }
 
         @include mini {
+            width: 290px;
             height: 600px;
         }
 
