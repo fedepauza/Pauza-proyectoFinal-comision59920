@@ -11,7 +11,7 @@
 }
 
 @mixin promax {
-    @media (max-width:450px) {
+    @media (max-width:435px) {
         @content;
     }
 }
@@ -28,3 +28,8 @@
     }
 }
 
+@mixin bootstrap {
+    @media (min-width:0) {
+        @content;
+    }
+}

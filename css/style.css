@@ -39,7 +39,7 @@ main {
       font-size: 4rem;
       color: #f0ede9;
       margin-top: -20px; }
-      @media (max-width: 450px) {
+      @media (max-width: 435px) {
         main div section h1 {
           font-size: 3rem;
           padding-top: 0;
@@ -61,7 +61,7 @@ main {
       width: 75%;
       font-size: 1rem;
       color: #f0ede9; }
-      @media (max-width: 450px) {
+      @media (max-width: 435px) {
         main div section p {
           width: 85%; } }
 
@@ -85,7 +85,7 @@ footer section {
   background-color: black;
   margin-top: 2.5rem;
   margin-bottom: 0; }
-  @media (max-width: 450px) {
+  @media (max-width: 435px) {
     footer section {
       padding-top: 7px;
       gap: 0; } }
@@ -97,7 +97,7 @@ footer section {
     @media (max-width: 768px) {
       footer section p {
         font-size: .625rem; } }
-    @media (max-width: 450px) {
+    @media (max-width: 435px) {
       footer section p {
         text-align: left;
         width: 80%;
@@ -107,7 +107,7 @@ footer section {
     font-size: .875rem;
     text-align: right;
     margin-right: 20px; }
-    @media (max-width: 450px) {
+    @media (max-width: 435px) {
       footer section h3 {
         width: 40%;
         margin-right: 5px;
@@ -139,7 +139,7 @@ header {
     header section a img {
       width: 90px; }
   header nav {
-    width: 100%;
+    width: 100vw;
     height: 65px;
     display: flex;
     justify-content: right;
@@ -149,9 +149,9 @@ header {
     position: relative;
     padding: 0 70px;
     z-index: 3; }
-    @media (max-width: 450px) {
+    @media (max-width: 435px) {
       header nav {
-        height: 35px; } }
+        height: 3px; } }
     header nav label {
       padding: 10px;
       margin-top: -5px;
@@ -160,9 +160,9 @@ header {
       @media (max-width: 768px) {
         header nav label {
           margin-right: -60px; } }
-      @media (max-width: 450px) {
+      @media (max-width: 435px) {
         header nav label {
-          margin-top: 25px; } }
+          margin-top: 60px; } }
     header nav input {
       display: none; }
     header nav ul {
@@ -182,7 +182,7 @@ header {
       @media (max-width: 768px) {
         header nav ul {
           left: -110px; } }
-      @media (max-width: 450px) {
+      @media (max-width: 435px) {
         header nav ul {
           left: -90px; } }
       @media (max-width: 380px) {
@@ -195,7 +195,7 @@ header {
         list-style: none;
         font-family: sans-serif;
         font-size: 1.5rem; }
-        @media (max-width: 450px) {
+        @media (max-width: 435px) {
           header nav ul li {
             margin-right: 30px; } }
         @media (max-width: 330px) {
@@ -218,7 +218,7 @@ input:checked + ul {
   @media (max-width: 768px) {
     input:checked + ul {
       width: 120%; } }
-  @media (max-width: 450px) {
+  @media (max-width: 435px) {
     input:checked + ul {
       width: 130%; } }
   @media (max-width: 330px) {
@@ -373,7 +373,7 @@ body {
           body main section article div button {
             position: absolute;
             bottom: -5px; }
-            @media (max-width: 450px) {
+            @media (max-width: 435px) {
               body main section article div button {
                 bottom: -20px; } }
             body main section article div button a {
@@ -398,7 +398,7 @@ body {
   position: relative;
   margin: auto;
   margin-bottom: 10px; }
-  @media (max-width: 450px) {
+  @media (max-width: 435px) {
     .button-ver-mas {
       bottom: -5px; } }
 
@@ -424,11 +424,14 @@ body {
 #motos:checked ~ #imagenes .auto, #motos:checked ~ #imagenes .renault, #motos:checked ~ #imagenes .fiat {
   display: none; }
 
+.nuestras-unidades-main {
+  height: 100%; }
+
 input {
   margin-bottom: 30px;
   margin-left: 20px; }
 
-@media (max-width: 450px) {
+@media (max-width: 435px) {
   .conteiner {
     display: flex;
     flex-wrap: wrap;
@@ -519,14 +522,14 @@ label {
     .redes-sociales .redes-wpp {
       bottom: 62px;
       left: 10px; } }
-  @media (max-width: 450px) {
+  @media (max-width: 435px) {
     .redes-sociales .redes-wpp {
       bottom: 62px; } }
   .redes-sociales .redes-wpp a {
     color: white; }
     .redes-sociales .redes-wpp a img {
       width: 50px; }
-      @media (max-width: 450px) {
+      @media (max-width: 435px) {
         .redes-sociales .redes-wpp a img {
           width: 30px; } }
 
@@ -564,7 +567,7 @@ main {
     text-decoration: underline;
     margin: auto;
     margin-bottom: 20px; }
-    @media (max-width: 450px) {
+    @media (max-width: 435px) {
       main section h1 {
         margin: auto;
         margin-bottom: 20px; } }
@@ -590,7 +593,7 @@ main {
       @media (max-width: 768px) {
         main .permutas-section .div-listas {
           height: 450px; } }
-      @media (max-width: 450px) {
+      @media (max-width: 435px) {
         main .permutas-section .div-listas {
           width: 400px;
           height: 500px; } }
@@ -610,7 +613,7 @@ main {
         margin-bottom: 20px;
         margin-top: 30px;
         margin-left: 0px; }
-        @media (max-width: 450px) {
+        @media (max-width: 435px) {
           main .permutas-section .div-listas h2 {
             margin-bottom: 10px; } }
       main .permutas-section .div-listas .permutas-ul {
@@ -655,7 +658,7 @@ main {
   @media (max-width: 768px) {
     .button-permuta {
       bottom: 30px; } }
-  @media (max-width: 450px) {
+  @media (max-width: 435px) {
     .button-permuta {
       bottom: 20px;
       left: 120px; } }
@@ -709,7 +712,7 @@ main {
       margin-bottom: 20px;
       padding-top: 20px;
       background-color: rgba(250, 235, 215, 0.51); }
-      @media (max-width: 450px) {
+      @media (max-width: 435px) {
         main .atencion-personalizada .div-atencion {
           width: 75%;
           height: 680px; } }
@@ -757,7 +760,7 @@ main {
         background-color: #992E14;
         bottom: 40px;
         padding-top: 1px; }
-        @media (max-width: 450px) {
+        @media (max-width: 435px) {
           main .atencion-personalizada .div-atencion button {
             left: 75px;
             bottom: 15px; } }
@@ -776,7 +779,7 @@ main {
   @media (max-width: 1025px) {
     .main-contacto {
       height: 100dvh; } }
-  @media (max-width: 450px) {
+  @media (max-width: 435px) {
     .main-contacto {
       height: 100%; } }
   .main-contacto section h1 {
@@ -867,7 +870,7 @@ main {
       main .volver-arriba a img {
         bottom: 62px;
         right: 8px; } }
-    @media (max-width: 450px) {
+    @media (max-width: 435px) {
       main .volver-arriba a img {
         width: 30px;
         bottom: 62px; } }

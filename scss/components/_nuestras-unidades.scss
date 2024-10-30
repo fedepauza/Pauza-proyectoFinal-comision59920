@@ -26,6 +26,10 @@
     display: none;
 }
 
+.nuestras-unidades-main  {
+    height: 100%;
+}
+
 input {
     margin-bottom: 30px;
     margin-left: 20px;
@@ -54,10 +58,5 @@ label {
     @include mini {
         font-size: .6875rem;
     }
-
-    // @include promax {
-    //  width: 20px;
-    // }
 }
-
 
