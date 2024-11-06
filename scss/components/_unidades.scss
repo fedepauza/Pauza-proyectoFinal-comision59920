@@ -3,7 +3,7 @@ $font-text: 'note sans';
 body {
     background-color: rgb(255, 255, 255);
     main {
-        font-family: $font-text ;
+        font-family: sans-serif ;
         section {
             margin-top: 0;
             justify-content: center;
@@ -20,10 +20,10 @@ body {
                 column-gap: 0px;
                 row-gap: 40px;
                 margin:auto;
+                margin-bottom: 60px;
                 justify-content: center;
                 align-self: center;
                 z-index: -5;
-                margin-bottom: 60px;
                 div {
                     display: flex;
                     position: relative;
@@ -46,7 +46,7 @@ body {
                     }
                     button{
                         position: absolute;
-                        bottom: -5px;
+                        bottom: -15px;
                         @include promax {
                             bottom: -20px;
                         }
@@ -74,6 +74,12 @@ body {
         height: 1.5rem;
         padding-top: 1px;
         background-color: map-get($colores-sitio , color3 );
+        &:hover {
+            background-color: rgb(255, 0, 0);
+            width: 120px;
+            height: 28px;
+            font-size: 17px;
+        }
     }
 
     .button-ver-mas {
