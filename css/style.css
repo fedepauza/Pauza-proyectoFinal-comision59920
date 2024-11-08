@@ -582,7 +582,7 @@ label {
       height: 95dvh; } }
   @media (max-width: 450px) {
     .section-oportunidades {
-      height: 105vh; } }
+      height: 125vh; } }
   @media (max-width: 380px) {
     .section-oportunidades {
       height: 150dvh; } }
