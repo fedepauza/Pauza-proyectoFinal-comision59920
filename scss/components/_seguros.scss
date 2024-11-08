@@ -109,13 +109,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 100px;
     height: 30px;
     margin: auto;
     margin-top: 40px;
     background-color: map-get($colores-sitio , color3 );
     border: none;
     border-radius: 10px;
+    &:hover {
+        background-color: rgb(255, 0, 0);
+        width: 120px;
+        height: 28px;
+        font-size: 17px;
+    }
     a{
         color: map-get($colores-texto , color1 );
         text-decoration: none;

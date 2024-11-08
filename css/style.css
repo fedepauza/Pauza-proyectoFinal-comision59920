@@ -26,7 +26,7 @@ header {
 
 main {
   padding-top: 0; }
-  main div section {
+  main .section-principal .section-dos {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -35,34 +35,34 @@ main {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.727);
     gap: 10px; }
-    main div section h1 {
+    main .section-principal .section-dos h1 {
       font-size: 4rem;
       color: #f0ede9;
       margin-top: -20px; }
-      @media (max-width: 435px) {
-        main div section h1 {
+      @media (max-width: 450px) {
+        main .section-principal .section-dos h1 {
           font-size: 3rem;
           padding-top: 0;
           margin-top: 100px; } }
       @media (max-width: 380px) {
-        main div section h1 {
+        main .section-principal .section-dos h1 {
           margin-top: 50px; } }
       @media (max-width: 330px) {
-        main div section h1 {
+        main .section-principal .section-dos h1 {
           font-size: 2.125rem; } }
-    main div section h2 {
+    main .section-principal .section-dos h2 {
       font-size: 1.5rem;
       color: #f0ede9;
       text-align: center; }
       @media (max-width: 330px) {
-        main div section h2 {
+        main .section-principal .section-dos h2 {
           font-size: 1rem; } }
-    main div section p {
+    main .section-principal .section-dos p {
       width: 75%;
       font-size: 1rem;
       color: #f0ede9; }
-      @media (max-width: 435px) {
-        main div section p {
+      @media (max-width: 450px) {
+        main .section-principal .section-dos p {
           width: 85%; } }
 
 .section-principal {
@@ -76,6 +76,7 @@ main {
   background-position: center; }
 
 footer section {
+  position: relative;
   width: 100%;
   height: 60px;
   display: flex;
@@ -84,37 +85,43 @@ footer section {
   justify-content: space-between;
   background-color: black;
   margin-top: 2.5rem;
-  margin-bottom: 0; }
-  @media (max-width: 435px) {
+  margin-bottom: 0;
+  padding: 5px; }
+  @media (max-width: 450px) {
     footer section {
       padding-top: 7px;
       gap: 0; } }
   footer section p {
+    width: 40%;
     color: antiquewhite;
     font-size: .875rem;
-    text-align: right;
+    text-align: left;
+    margin-top: 15px;
     margin-left: 20px; }
     @media (max-width: 768px) {
       footer section p {
         font-size: .625rem; } }
-    @media (max-width: 435px) {
+    @media (max-width: 450px) {
       footer section p {
+        font-size: .5rem;
         text-align: left;
         width: 80%;
         margin-left: 5px; } }
   footer section h3 {
+    position: absolute;
     color: antiquewhite;
-    font-size: .875rem;
+    font-size: .825rem;
     text-align: right;
-    margin-right: 20px; }
-    @media (max-width: 435px) {
+    right: 20px;
+    margin-top: -10px; }
+    @media (max-width: 450px) {
       footer section h3 {
         width: 40%;
-        margin-right: 5px;
+        margin-right: -6px;
         text-align: right; } }
     @media (max-width: 330px) {
       footer section h3 {
-        font-size: .6875rem; } }
+        font-size: .5rem; } }
 
 header {
   position: fixed;
@@ -139,7 +146,7 @@ header {
     header section a img {
       width: 90px; }
   header nav {
-    width: 100vw;
+    width: 100%;
     height: 65px;
     display: flex;
     justify-content: right;
@@ -149,7 +156,7 @@ header {
     position: relative;
     padding: 0 70px;
     z-index: 3; }
-    @media (max-width: 435px) {
+    @media (max-width: 450px) {
       header nav {
         height: 3px; } }
     header nav label {
@@ -160,7 +167,7 @@ header {
       @media (max-width: 768px) {
         header nav label {
           margin-right: -60px; } }
-      @media (max-width: 435px) {
+      @media (max-width: 450px) {
         header nav label {
           margin-top: 60px; } }
     header nav input {
@@ -182,7 +189,7 @@ header {
       @media (max-width: 768px) {
         header nav ul {
           left: -110px; } }
-      @media (max-width: 435px) {
+      @media (max-width: 450px) {
         header nav ul {
           left: -90px; } }
       @media (max-width: 380px) {
@@ -194,22 +201,21 @@ header {
       header nav ul li {
         list-style: none;
         font-family: sans-serif;
-        font-size: 1.5rem; }
-        @media (max-width: 435px) {
+        font-size: 1.5rem;
+        transition: 0.2s; }
+        header nav ul li:hover {
+          font-size: 2rem; }
+        @media (max-width: 450px) {
           header nav ul li {
             margin-right: 30px; } }
         @media (max-width: 330px) {
           header nav ul li {
-            font-size: 1rem; } }
+            font-size: 1.4rem;
+            margin-right: 60px; } }
       header nav ul a {
         text-decoration: none;
         color: #f0ede9;
         text-shadow: 5px 5px 5px black; }
-  header .logo-redes {
-    width: 50px; }
-    @media (max-width: 380px) {
-      header .logo-redes {
-        width: 30px; } }
 
 input:checked + ul {
   width: 110%;
@@ -218,12 +224,12 @@ input:checked + ul {
   @media (max-width: 768px) {
     input:checked + ul {
       width: 120%; } }
-  @media (max-width: 435px) {
+  @media (max-width: 450px) {
     input:checked + ul {
       width: 130%; } }
   @media (max-width: 330px) {
     input:checked + ul {
-      width: 140%; } }
+      width: 150%; } }
 
 .main-seguros {
   display: flex;
@@ -319,13 +325,18 @@ input:checked + ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 100px;
   height: 30px;
   margin: auto;
   margin-top: 40px;
   background-color: #CC3D1B;
   border: none;
   border-radius: 10px; }
+  .button-seguros:hover {
+    background-color: red;
+    width: 120px;
+    height: 28px;
+    font-size: 17px; }
   .button-seguros a {
     color: #f0ede9;
     text-decoration: none; }
@@ -341,6 +352,27 @@ body {
       body main section h2 {
         margin: 40px 30px;
         font-size: 2rem; }
+        @media (max-width: 1025px) {
+          body main section h2 {
+            font-size: 1.8rem;
+            text-align: left;
+            margin-left: 50px; } }
+        @media (max-width: 768px) {
+          body main section h2 {
+            font-size: 2rem;
+            text-align: center; } }
+        @media (max-width: 450px) {
+          body main section h2 {
+            font-size: 1.8rem;
+            text-align: center; } }
+        @media (max-width: 380px) {
+          body main section h2 {
+            font-size: 1.5rem;
+            text-align: center; } }
+        @media (max-width: 330px) {
+          body main section h2 {
+            font-size: 1.5rem;
+            text-align: center; } }
       body main section article {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(6.25rem, 21.875rem));
@@ -373,7 +405,7 @@ body {
           body main section article div button {
             position: absolute;
             bottom: -15px; }
-            @media (max-width: 435px) {
+            @media (max-width: 450px) {
               body main section article div button {
                 bottom: -20px; } }
             body main section article div button a {
@@ -384,14 +416,15 @@ body {
   left: 15px;
   top: 2px; }
 
-.button-a, .button-ver-mas, .container-grid .display-grid .descripcion-grid .button-b, .button-oportunidades {
+.button-a, .button-ver-mas, body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .button-b, .button-oportunidades {
   border: none;
   border-radius: 5px;
   width: 100px;
   height: 1.5rem;
   padding-top: 1px;
-  background-color: #CC3D1B; }
-  .button-a:hover, .button-ver-mas:hover, .container-grid .display-grid .descripcion-grid .button-b:hover, .button-oportunidades:hover {
+  background-color: #CC3D1B;
+  transition: 0.2s; }
+  .button-a:hover, .button-ver-mas:hover, body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .button-b:hover, .button-oportunidades:hover {
     background-color: red;
     width: 120px;
     height: 28px;
@@ -403,7 +436,7 @@ body {
   position: relative;
   margin: auto;
   margin-bottom: 10px; }
-  @media (max-width: 435px) {
+  @media (max-width: 450px) {
     .button-ver-mas {
       bottom: -5px; } }
 
@@ -440,55 +473,84 @@ body {
 input {
   margin-bottom: 30px;
   margin-left: 20px; }
+  @media (max-width: 450px) {
+    input {
+      margin-left: 25px; } }
 
-.container-grid {
-  width: 95%;
-  margin: auto;
-  margin-bottom: 200px;
-  padding-top: 65px; }
-  .container-grid .display-grid {
-    width: 90%;
-    height: 110px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin-bottom: 60px;
+body .nuestras-unidades-main {
+  width: 100%; }
+  body .nuestras-unidades-main .container-grid {
+    display: block;
+    width: 95%;
     margin: auto;
-    background-color: white;
-    font-family: sans-serif; }
-    @media (max-width: 1025px) {
-      .container-grid .display-grid {
-        grid-template-columns: repeat(3, 400px); } }
-    @media (max-width: 435px) {
-      .container-grid .display-grid {
-        grid-template-columns: repeat(1, 400px); } }
-    .container-grid .display-grid .descripcion-grid {
-      width: 280px;
-      height: 350px;
-      margin-left: 30px;
-      margin-bottom: 20px; }
-      .container-grid .display-grid .descripcion-grid .versys {
-        position: relative; }
-        .container-grid .display-grid .descripcion-grid .versys img {
-          width: 250px; }
-        .container-grid .display-grid .descripcion-grid .versys p {
-          position: absolute;
-          bottom: 10px;
-          color: black;
-          right: 40px;
-          width: 80px; }
-      .container-grid .display-grid .descripcion-grid div p {
-        margin-left: 10px;
-        margin-top: 3px;
-        color: black; }
-      .container-grid .display-grid .descripcion-grid .button-b {
-        margin-top: 10px;
-        margin-left: 80px; }
-        .container-grid .display-grid .descripcion-grid .button-b:hover {
-          margin-left: 70px; }
-        .container-grid .display-grid .descripcion-grid .button-b a {
-          text-decoration: none;
-          color: #fffcfc; }
+    margin-bottom: 50px;
+    padding-top: 65px; }
+    body .nuestras-unidades-main .container-grid #imagenes {
+      width: 90%;
+      height: 1050px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin: auto;
+      background-color: white;
+      font-family: sans-serif;
+      justify-items: center;
+      gap: 10px; }
+      @media (max-width: 1025px) {
+        body .nuestras-unidades-main .container-grid #imagenes {
+          grid-template-columns: repeat(3, 300px);
+          height: 1400px;
+          justify-items: center; } }
+      @media (max-width: 768px) {
+        body .nuestras-unidades-main .container-grid #imagenes {
+          grid-template-columns: repeat(2, 375px);
+          justify-items: center;
+          height: 2100px;
+          margin-bottom: 50px; } }
+      @media (max-width: 450px) {
+        body .nuestras-unidades-main .container-grid #imagenes {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 4250px;
+          margin-top: 180px; } }
+      body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 280px;
+        height: 350px;
+        padding-top: 12px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226); }
+        @media (max-width: 450px) {
+          body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid {
+            height: 385px; } }
+        body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .versys {
+          position: relative; }
+          body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .versys img {
+            width: 250px; }
+          body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .versys p {
+            position: absolute;
+            bottom: 10px;
+            color: black;
+            right: 10px;
+            width: 80px; }
+        body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid div p {
+          margin-left: -30px;
+          margin-top: 3px;
+          color: black; }
+        body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .button-b {
+          margin: auto;
+          margin-top: 10px; }
+          @media (max-width: 450px) {
+            body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .button-b {
+              margin-bottom: 10px; } }
+          body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .button-b:hover {
+            margin-left: 70px; }
+          body .nuestras-unidades-main .container-grid #imagenes .descripcion-grid .button-b a {
+            text-decoration: none;
+            color: #fffcfc; }
 
 label {
   font-size: 1.125rem; }
@@ -499,20 +561,6 @@ label {
     label {
       font-size: .6875rem; } }
 
-@media (max-width: 1025px) {
-  body {
-    display: grid;
-    grid-template-rows: auto 1fr auto; } }
-
-.main-oportunidades {
-  width: 100dvh;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .titulo-oportunidades {
   font-weight: bolder;
   padding-top: 85px;
@@ -522,6 +570,7 @@ label {
 
 .section-oportunidades {
   width: 90%;
+  height: 35dvh;
   margin: auto; }
   .section-oportunidades article {
     display: flex;
@@ -572,14 +621,14 @@ label {
     .redes-sociales .redes-wpp {
       bottom: 62px;
       left: 10px; } }
-  @media (max-width: 435px) {
+  @media (max-width: 450px) {
     .redes-sociales .redes-wpp {
       bottom: 62px; } }
   .redes-sociales .redes-wpp a {
     color: white; }
     .redes-sociales .redes-wpp a img {
       width: 50px; }
-      @media (max-width: 435px) {
+      @media (max-width: 450px) {
         .redes-sociales .redes-wpp a img {
           width: 30px; } }
 
@@ -617,7 +666,7 @@ main {
     text-decoration: underline;
     margin: auto;
     margin-bottom: 20px; }
-    @media (max-width: 435px) {
+    @media (max-width: 450px) {
       main section h1 {
         margin: auto;
         margin-bottom: 20px; } }
@@ -643,7 +692,7 @@ main {
       @media (max-width: 768px) {
         main .permutas-section .div-listas {
           height: 450px; } }
-      @media (max-width: 435px) {
+      @media (max-width: 450px) {
         main .permutas-section .div-listas {
           width: 400px;
           height: 500px; } }
@@ -663,7 +712,7 @@ main {
         margin-bottom: 20px;
         margin-top: 30px;
         margin-left: 0px; }
-        @media (max-width: 435px) {
+        @media (max-width: 450px) {
           main .permutas-section .div-listas h2 {
             margin-bottom: 10px; } }
       main .permutas-section .div-listas .permutas-ul {
@@ -708,7 +757,7 @@ main {
   @media (max-width: 768px) {
     .button-permuta {
       bottom: 30px; } }
-  @media (max-width: 435px) {
+  @media (max-width: 450px) {
     .button-permuta {
       bottom: 20px;
       left: 120px; } }
@@ -762,7 +811,7 @@ main {
       margin-bottom: 20px;
       padding-top: 20px;
       background-color: rgba(250, 235, 215, 0.51); }
-      @media (max-width: 435px) {
+      @media (max-width: 450px) {
         main .atencion-personalizada .div-atencion {
           width: 75%;
           height: 680px; } }
@@ -810,7 +859,7 @@ main {
         background-color: #992E14;
         bottom: 40px;
         padding-top: 1px; }
-        @media (max-width: 435px) {
+        @media (max-width: 450px) {
           main .atencion-personalizada .div-atencion button {
             left: 75px;
             bottom: 15px; } }
@@ -829,7 +878,7 @@ main {
   @media (max-width: 1025px) {
     .main-contacto {
       height: 100dvh; } }
-  @media (max-width: 435px) {
+  @media (max-width: 450px) {
     .main-contacto {
       height: 100%; } }
   .main-contacto section h1 {
@@ -920,7 +969,7 @@ main {
       main .volver-arriba a img {
         bottom: 62px;
         right: 8px; } }
-    @media (max-width: 435px) {
+    @media (max-width: 450px) {
       main .volver-arriba a img {
         width: 30px;
         bottom: 62px; } }

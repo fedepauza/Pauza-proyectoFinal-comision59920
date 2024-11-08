@@ -25,11 +25,7 @@
 #motos:checked ~ #imagenes .auto, #motos:checked ~ #imagenes .renault, #motos:checked ~ #imagenes .fiat {
     display: none;
 }
-// .body-grid {
-//     display: grid;
-//     grid-template-rows: auto 1fr auto;
-//     height: 100dvh;
-// }
+
 .nuestras-unidades-main > * {
     height: 100%;
     width: 100%;
@@ -42,74 +38,105 @@
 input {
     margin-bottom: 30px;
     margin-left: 20px;
+    @include promax {
+        margin-left: 25px;
+    }
 }
+body {
+    .nuestras-unidades-main {
+        width: 100%;
+        .container-grid {
+            display: block;
+            width: 95%;
+            margin: auto;
+            margin-bottom: 50px;
+            padding-top: 65px;
+            #imagenes{
+                width: 90%;
+                height: 1050px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3,1fr);
+                margin: auto;
+                background-color: rgb(255, 255, 255);
+                font-family: sans-serif;
+                justify-items: center;
+                gap: 10px;
 
-.container-grid {
-    width: 95%;
-    margin: auto;
-    margin-bottom: 200px;
-    padding-top: 65px;
-    
-    .display-grid {
-        width: 90%;
-        height: 110px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3,1fr);
-        margin-bottom: 60px;
-        margin: auto;
-        background-color: rgb(255, 255, 255);
-        font-family: sans-serif;
+                @include tabletxl {
+                    grid-template-columns: repeat(3, 300px);
+                    height: 1400px;
+                    justify-items: center;
+                }
+                @include tablet {
+                    grid-template-columns: repeat(2, 375px);
+                    justify-items: center;
+                    height: 2100px;
+                    margin-bottom: 50px;
 
-        @include tabletxl {
-            grid-template-columns: repeat(3, 400px);
-        }
-        @include promax {
-            grid-template-columns: repeat(1, 400px);
-            // grid-template-rows: repeat(12,1fr);
-        }
-        
-        .descripcion-grid{
-            width: 280px;
-            height: 350px;
-            margin-left: 30px;
-            margin-bottom: 20px;
-            .versys {
-                position: relative;
-                img{
-                    width:250px;        
                 }
-                p {
-                    position: absolute;
-                    bottom: 10px;
-                    color: black;                 
-                    right: 40px;
-                    width: 80px;
+                @include promax {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 4250px;
+                    margin-top: 180px;
+                    
+                    // grid-template-rows: repeat(12,1fr);
                 }
-            }
-            div {
-                p {
-                    margin-left: 10px;
-                    margin-top: 3px;
-                    color: black;
-                }
-            }
-            .button-b {
-                margin-top: 10px;
-                margin-left: 80px;
-                @extend .button-a;
-                &:hover {
-                    margin-left: 70px;
-                }
-                a {
-                    text-decoration: none;
-                    color: rgb(255, 252, 252);
+                
+                .descripcion-grid{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 280px;
+                    height: 350px;
+                    padding-top: 12px;
+                    margin-bottom: 20px;
+                    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+                    @include promax {
+                        height: 385px;
+                    }
+                    .versys {
+                        position: relative;
+                        img{
+                            width:250px;      
+                        }
+                        p {
+                            position: absolute;
+                            bottom: 10px;
+                            color: black;                 
+                            right: 10px;
+                            width: 80px;
+                        }
+                    }
+                    div {
+                        p {
+                            margin-left: -30px;
+                            margin-top: 3px;
+                            color: black;
+                        }
+                    }
+                    .button-b {
+                        margin: auto;
+                        margin-top: 10px;
+                        @include promax {
+                            margin-bottom: 10px
+                        }
+                        @extend .button-a;
+                        &:hover {
+                            margin-left: 70px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: rgb(255, 252, 252);
+                        }
+                    }
                 }
             }
         }
     }
 }
-
 // footer {
 //     grid-row: 3/4;
 // }
