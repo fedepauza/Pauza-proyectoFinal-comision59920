@@ -206,7 +206,7 @@ header {
           font-size: 2rem; }
         @media (max-width: 450px) {
           header nav ul li {
-            margin-right: 30px; } }
+            margin-right: 20px; } }
         @media (max-width: 330px) {
           header nav ul li {
             font-size: 1.4rem;
