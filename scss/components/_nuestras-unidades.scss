@@ -2,7 +2,7 @@
 //     border: 0.5px solid red;
 // }
 
-#auto:checked ~ #imagenes .motos {
+#auto:checked ~ #imagenes .moto {
     display: none;
 }
 
@@ -10,15 +10,15 @@
     display: none;
 }
 
-#automatico:checked ~ #imagenes .manual {
+#automatico:checked ~ #imagenes .manual, #automatico:checked ~ #imagenes .moto {
     display: none;
 }
 
-#fiat:checked ~ #imagenes .renault, #fiat:checked ~ #imagenes .motos{
+#fiat:checked ~ #imagenes .renault, #fiat:checked ~ #imagenes .moto{
     display: none;
 }
 
-#renault:checked ~ #imagenes .fiat, #renault:checked ~  #imagenes .motos {
+#renault:checked ~ #imagenes .fiat, #renault:checked ~  #imagenes .moto {
     display: none;
 }
 
@@ -26,37 +26,129 @@
     display: none;
 }
 
-.nuestras-unidades-main  {
+.nuestras-unidades-main > * {
     height: 100%;
+    width: 100%;
+    margin:auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 40px;
 }
 
 input {
     margin-bottom: 30px;
     margin-left: 20px;
-    // @include promax {
-    //      width: 30px;
-    // }
-}
-.conteiner {
     @include promax {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 300px !important;
-        #imagenes {
-            width: 80%;
+        margin-left: 25px;
+    }
+}
+body {
+    .nuestras-unidades-main {
+        width: 100%;
+        .container-grid {
+            display: block;
+            width: 95%;
+            margin: auto;
+            margin-bottom: 50px;
+            padding-top: 65px;
+            #imagenes{
+                width: 90%;
+                height: 1050px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3,1fr);
+                margin: auto;
+                background-color: rgb(255, 255, 255);
+                font-family: sans-serif;
+                justify-items: center;
+                gap: 10px;
+
+                @include tabletxl {
+                    grid-template-columns: repeat(3, 300px);
+                    height: 1400px;
+                    justify-items: center;
+                }
+                @include tablet {
+                    grid-template-columns: repeat(2, 375px);
+                    justify-items: center;
+                    height: 2100px;
+                    margin-bottom: 50px;
+
+                }
+                @include promax {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 4250px;
+                    margin-top: 180px;
+                    
+                    // grid-template-rows: repeat(12,1fr);
+                }
+                
+                .descripcion-grid{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 280px;
+                    height: 350px;
+                    padding-top: 12px;
+                    margin-bottom: 20px;
+                    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+                    @include promax {
+                        height: 385px;
+                    }
+                    .versys {
+                        position: relative;
+                        img{
+                            width:250px;      
+                        }
+                        p {
+                            position: absolute;
+                            bottom: 10px;
+                            color: black;                 
+                            right: 10px;
+                            width: 80px;
+                        }
+                    }
+                    div {
+                        p {
+                            margin-left: -30px;
+                            margin-top: 3px;
+                            color: black;
+                        }
+                    }
+                    .button-b {
+                        margin: auto;
+                        margin-top: 10px;
+                        @include promax {
+                            margin-bottom: 10px
+                        }
+                        @extend .button-a;
+                        &:hover {
+                            margin-left: 70px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: rgb(255, 252, 252);
+                        }
+                    }
+                }
+            }
         }
     }
 }
+// footer {
+//     grid-row: 3/4;
+// }
+
 label {
     font-size: 1.125rem;
-
     @include se {
         font-size: .875rem;
     }
-
     @include mini {
         font-size: .6875rem;
     }
 }
+
 
