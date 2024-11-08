@@ -55,8 +55,9 @@
             background-color: map-get($colores-sitio , color6 );
             border-radius: 10px;
             color: rgb(236, 231, 231);
-            h2 {
+            .h2-cobertura {
                 font-size: map-get($text-size , size4 );
+                margin: auto;
                 margin-top: 40px;
                 margin-bottom: -40px;
                 
@@ -80,11 +81,13 @@
             width: 250px;
             height: 210px;
             text-align: center;
+            align-items: center;
             background-color: map-get($colores-sitio , color6 );
             border-radius: 10px;
             color:  rgb(236, 231, 231);
-            h2 {
+            .h2-beneficios  {
                 font-size: map-get($text-size , size4 );
+                margin: auto;
                 margin-top: 40px;
                 margin-bottom: -40px;
             }

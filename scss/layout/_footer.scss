@@ -24,7 +24,7 @@ footer {
                 color: antiquewhite;
                 font-size: .875rem;
                 text-align: left;
-                margin-top: 15px;
+                // margin-top: 15px;
                 margin-left: 20px;
 
                 @include tablet {
@@ -34,7 +34,7 @@ footer {
                 @include promax {
                     font-size: .5rem;
                     text-align: left;
-                    width: 80%;
+                    width: 40%;
                     margin-left: 5px;
                 }
                 

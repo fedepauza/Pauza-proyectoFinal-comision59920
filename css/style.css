@@ -96,7 +96,6 @@ footer section {
     color: antiquewhite;
     font-size: .875rem;
     text-align: left;
-    margin-top: 15px;
     margin-left: 20px; }
     @media (max-width: 768px) {
       footer section p {
@@ -105,7 +104,7 @@ footer section {
       footer section p {
         font-size: .5rem;
         text-align: left;
-        width: 80%;
+        width: 40%;
         margin-left: 5px; } }
   footer section h3 {
     position: absolute;
@@ -283,8 +282,9 @@ input:checked + ul {
       background-color: rgba(29, 28, 28, 0.584);
       border-radius: 10px;
       color: #ece7e7; }
-      .main-seguros .cobertura-full .conteiner-cobertura h2 {
+      .main-seguros .cobertura-full .conteiner-cobertura .h2-cobertura {
         font-size: 1.5rem;
+        margin: auto;
         margin-top: 40px;
         margin-bottom: -40px; }
       .main-seguros .cobertura-full .conteiner-cobertura p {
@@ -303,11 +303,13 @@ input:checked + ul {
       width: 250px;
       height: 210px;
       text-align: center;
+      align-items: center;
       background-color: rgba(29, 28, 28, 0.584);
       border-radius: 10px;
       color: #ece7e7; }
-      .main-seguros .beneficios-full .conteiner-beneficios h2 {
+      .main-seguros .beneficios-full .conteiner-beneficios .h2-beneficios {
         font-size: 1.5rem;
+        margin: auto;
         margin-top: 40px;
         margin-bottom: -40px; }
       .main-seguros .beneficios-full .conteiner-beneficios p {
@@ -483,7 +485,7 @@ body .nuestras-unidades-main {
     display: block;
     width: 95%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     padding-top: 65px; }
     body .nuestras-unidades-main .container-grid #imagenes {
       width: 90%;
@@ -563,7 +565,7 @@ label {
 
 .titulo-oportunidades {
   font-weight: bolder;
-  padding-top: 85px;
+  padding-top: 65px;
   margin-left: 30px;
   margin-bottom: 80px;
   font-size: 2rem; }
@@ -572,6 +574,21 @@ label {
   width: 90%;
   height: 35dvh;
   margin: auto; }
+  @media (max-width: 1025px) {
+    .section-oportunidades {
+      height: 75dvh; } }
+  @media (max-width: 768px) {
+    .section-oportunidades {
+      height: 95dvh; } }
+  @media (max-width: 450px) {
+    .section-oportunidades {
+      height: 105vh; } }
+  @media (max-width: 380px) {
+    .section-oportunidades {
+      height: 150dvh; } }
+  @media (max-width: 330px) {
+    .section-oportunidades {
+      height: 170dvh; } }
   .section-oportunidades article {
     display: flex;
     flex-direction: row;
@@ -760,13 +777,14 @@ main {
   @media (max-width: 450px) {
     .button-permuta {
       bottom: 20px;
-      left: 120px; } }
+      left: 110px; } }
   @media (max-width: 380px) {
     .button-permuta {
-      left: 95px; } }
+      left: 80px; } }
   @media (max-width: 330px) {
     .button-permuta {
-      left: 65px; } }
+      left: 57px;
+      bottom: 10px; } }
   .button-permuta a {
     text-decoration: none;
     color: #f0ede9; }

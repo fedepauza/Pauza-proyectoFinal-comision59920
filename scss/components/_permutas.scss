@@ -130,15 +130,16 @@ main {
 
             @include promax {
                 bottom: 20px;
-                left: 120px;
+                left: 110px;
             }
 
             @include se {
-                left: 95px;
+                left: 80px;
             }
             
             @include mini {
-                left: 65px;
+                left: 57px;
+                bottom: 10px;
             }
             a {
                 text-decoration: none;
