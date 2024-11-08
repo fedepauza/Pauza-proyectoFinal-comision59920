@@ -675,7 +675,8 @@ main {
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 100px; }
     main .permutas-section .div-listas {
       display: flex;
       position: relative;
@@ -973,3 +974,57 @@ main {
       main .volver-arriba a img {
         width: 30px;
         bottom: 62px; } }
+
+.tiny5-regular {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+main section .h1-redes {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3rem;
+  animation: color-texto  7s linear infinite alternate both; }
+
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; }
+  main article .redes-logos {
+    width: 200px;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: transform 1s; }
+    main article .redes-logos:hover {
+      transform: rotate(360deg); }
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main section .fede-pauza {
+    font-family: "Tiny5", sans-serif;
+    text-align: center;
+    animation: text-size  10s linear infinite alternate both; }
+  main section .img-fede {
+    width: 250px; }
+
+@keyframes color-texto {
+  0% {
+    color: white; }
+  33% {
+    color: red; }
+  66% {
+    color: lime; }
+  100% {
+    color: blue; } }
+
+@keyframes text-size {
+  0% {
+    font-size: 0rem; }
+  33% {
+    font-size: 0.75rem; }
+  66% {
+    font-size: 1.5rem; }
+  100% {
+    font-size: 3rem; } }

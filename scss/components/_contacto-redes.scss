@@ -1,0 +1,75 @@
+.tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+main {
+    section {
+        .h1-redes {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            font-size: 3rem;
+            animation: color-texto  7s linear infinite alternate both;
+        }
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .redes-logos {
+            width: 200px;
+            border-radius: 15px;
+            margin-top: 20px;
+            transition: transform 1s ;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .fede-pauza {
+            font-family: "Tiny5", sans-serif;
+            text-align: center;
+            animation: text-size  10s linear infinite alternate both;
+        }
+        .img-fede {
+            width: 250px;
+        }
+    }
+}
+
+@keyframes color-texto {
+    0% {
+        color: white;
+    }
+    33% {
+        color: red;
+    }
+    66% {
+        color: rgb(0, 255, 0);
+    }
+    100% {
+        color: rgb(0, 0, 255);
+    }
+    
+}
+
+@keyframes text-size {
+    0% {
+        font-size: 0rem;
+    }
+    33% {
+        font-size: 0.75rem;
+    }
+    66% {
+        font-size: 1.5rem;
+    }
+    100% {
+        font-size: 3rem;
+    }
+}
