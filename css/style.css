@@ -206,15 +206,17 @@ header {
           font-size: 2rem; }
         @media (max-width: 450px) {
           header nav ul li {
-            margin-right: 20px; } }
-        @media (max-width: 330px) {
-          header nav ul li {
-            font-size: 1.4rem;
-            margin-right: 60px; } }
-      header nav ul a {
-        text-decoration: none;
-        color: #f0ede9;
-        text-shadow: 5px 5px 5px black; }
+            margin-right: 20px;
+            font-size: 1.2rem; }
+            header nav ul li:hover {
+              font-size: 1.5rem; } }
+  @media (max-width: 450px) and (max-width: 330px) {
+    header nav ul li {
+      margin-right: 60px; } }
+        header nav ul li a {
+          text-decoration: none;
+          color: #f0ede9;
+          text-shadow: 5px 5px 5px black; }
 
 input:checked + ul {
   width: 110%;
@@ -225,10 +227,15 @@ input:checked + ul {
       width: 120%; } }
   @media (max-width: 450px) {
     input:checked + ul {
-      width: 130%; } }
+      width: 130%;
+      height: 95vh; } }
+  @media (max-width: 380px) {
+    input:checked + ul {
+      height: 90vh; } }
   @media (max-width: 330px) {
     input:checked + ul {
-      width: 150%; } }
+      width: 150%;
+      height: 89vh; } }
 
 .main-seguros {
   display: flex;

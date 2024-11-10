@@ -99,10 +99,12 @@ header {
         
                         @include promax {
                             margin-right: 20px;
+                            font-size: 1.2rem;
+                            &:hover {
+                                font-size: 1.5rem;
                         }
 
                         @include mini {
-                            font-size: 1.4rem;
                             margin-right: 60px;
                         }
                     }
@@ -110,9 +112,11 @@ header {
                         text-decoration: none;
                         color: map-get($colores-texto , color1 );
                         text-shadow: 5px 5px 5px black;
+                        
                     }
                 }
         }
+}
 }
 // Menu hamburguesa on/off 
 
@@ -125,10 +129,15 @@ input:checked + ul{
         width: 120%;
     }
     @include promax {
-        width: 130%;   
+        width: 130%;  
+        height: 95vh; 
     }
 
+    @include se {
+        height: 90vh; 
+    }
     @include mini {
         width: 150%;
+        height: 89vh; 
     }
 }
